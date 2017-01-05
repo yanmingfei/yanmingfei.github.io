@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			
+			div {
+				width: 600px;
+				height: 300px;
+				line-height: 300px;
+				text-align: center;
+				margin: 100px auto;
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				font-family: "微软雅黑";
+				font-size: 40px;
+				position: relative;
+				background: #fff;
+			}
+			
+			p {
+				color: #fff;
+				text-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+			}
+			
+			div:after {
+				position: absolute;
+				left: 10px;
+				top: 70%;
+				right: 10px;
+				bottom: 0;
+				content: " ";
+				background: #ff0000;
+				box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+				border-radius: 20%;
+				z-index: -1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p>小码哥网页UI学院</p>
+		</div>
+	</body>
+
+</html>

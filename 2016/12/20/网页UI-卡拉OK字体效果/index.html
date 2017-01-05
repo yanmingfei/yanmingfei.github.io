@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>卡拉OK字体效果 | 网页UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="简介:其实这种效果是非常简单的，可以边打开音乐，边码代码，不信你试试，我把这首歌的链接发一下，歌名：妳 （请下载一个酷我音乐盒客户端）像这种样式我们在观看之余，感觉到它的美之余，如何自己制作一个这么炫酷的效果。看到这个之后是否有种跃跃欲试的赶脚。等会我们自己也可以制作出如此美丽的东西。跟它一毛一样。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="卡拉OK字体效果">
+<meta property="og:url" content="https://github.com/yanmingfei/2016/12/20/网页UI-卡拉OK字体效果/index.html">
+<meta property="og:site_name" content="网页UI">
+<meta property="og:description" content="简介:其实这种效果是非常简单的，可以边打开音乐，边码代码，不信你试试，我把这首歌的链接发一下，歌名：妳 （请下载一个酷我音乐盒客户端）像这种样式我们在观看之余，感觉到它的美之余，如何自己制作一个这么炫酷的效果。看到这个之后是否有种跃跃欲试的赶脚。等会我们自己也可以制作出如此美丽的东西。跟它一毛一样。">
+<meta property="og:image" content="https://github.com/yanmingfei/gallery/ok.png">
+<meta property="og:updated_time" content="2016-12-21T04:05:25.645Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="卡拉OK字体效果">
+<meta name="twitter:description" content="简介:其实这种效果是非常简单的，可以边打开音乐，边码代码，不信你试试，我把这首歌的链接发一下，歌名：妳 （请下载一个酷我音乐盒客户端）像这种样式我们在观看之余，感觉到它的美之余，如何自己制作一个这么炫酷的效果。看到这个之后是否有种跃跃欲试的赶脚。等会我们自己也可以制作出如此美丽的东西。跟它一毛一样。">
+<meta name="twitter:image" content="https://github.com/yanmingfei/gallery/ok.png">
+    
+
+    
+        <link rel="alternate" href="/" title="网页UI" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">网页UI</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">档案</a>
+                
+                    <a class="main-nav-link" href="/categories">类目</a>
+                
+                    <a class="main-nav-link" href="/tags">标记</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">档案</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">类目</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标记</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.jpg" />
+            <h2 id="name">yanmingfei</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>GuangZhou, China</span>
+            <a id="follow" target="_blank" href="https://github.com/yanmingfei">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                7
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                3
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/yanmingfei" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-网页UI-卡拉OK字体效果" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<img src="/gallery/ok.png" class="article-banner" />
+	
+
+
+
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            卡拉OK字体效果
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/12/20/网页UI-卡拉OK字体效果/">
+            <time datetime="2016-12-20T03:32:40.000Z" itemprop="datePublished">2016-12-20</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/前端/">前端</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/CSS3/">CSS3</a>, <a class="tag-link" href="/tags/HTML5/">HTML5</a>, <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><strong>简介:</strong><br>其实这种效果是非常简单的，可以边打开音乐，边码代码，不信你试试，我把这首歌的链接发一下，歌名：<a href="http://www.kuwo.cn/yinyue/9914896" target="_blank" rel="external">妳</a> （请下载一个酷我音乐盒客户端）<br>像这种样式我们在观看之余，感觉到它的美之余，如何自己制作一个这么炫酷的效果。看到这个之后是否有种跃跃欲试的赶脚。等会我们自己也可以制作出如此美丽的东西。跟它一毛一样。<br><a id="more"></a><br><strong>按步就班学习:</strong><br><strong>技巧说明:</strong><br>html+css<br>透过观察，下面一层字，上面一层字，下面的字不变化，上面的字，在进行变化。从这里我们可以分析出，上面的字是通过定位进行才能放置到上面，所以它是定位的，我们使用相对定位。并且控制上面一层字体颜色及它的宽度，保证它一行显示，不会换行：<br>代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">            *&#123;margin: 0;padding: 0;list-style: none;border: none;&#125;</div><div class="line">            div&#123;width: 980px;line-height: 24px;position: relative;&#125;</div><div class="line">            span&#123; height: 24px; overflow: hidden;&#125;</div><div class="line">            span:nth-child(2)&#123;position: absolute;/*绝对定位*/left: 0;top: 0; color: red; width: 20px; white-space: nowrap;&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>赞美你迎着风舞蹈<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>赞美你迎着风舞蹈<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><strong>效果</strong><br><img src="/gallery/okview1.png" alt=""></p>
+<p><strong>第二步：</strong><br><strong>JS</strong><br>我们通常见到的是让卡拉OK字在中间居中。而并非是让其在页面当中居左对齐。那该如何处理它们呢？这里就需要请到JS大神了。注意点在于 获取下层span宽度，和span居中后相对于它父级的坐标值。利用获取到的值去改变上层span的宽度和它的定位坐标。<br><strong>看代码</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">            *&#123;margin: 0;padding: 0;list-style: none;border: none;&#125;</div><div class="line">            div&#123;width: 980px;line-height: 24px;position: relative;  text-align: center; margin: auto;&#125;</div><div class="line">            span&#123; height: 24px; overflow: hidden;&#125;</div><div class="line">            span:nth-child(2)&#123;position: absolute;/*绝对定位*/left: 0;top: 0; color: red; width: 20px; white-space: nowrap;/*让下层文字不换行，并且设置overflow:hidden。上面span已经对所有span设置overflow:hidden;故这里可以不设置*/&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>赞美你迎着风舞蹈<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>赞美你迎着风舞蹈<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">            window.onload = function()&#123;</div><div class="line">                var odiv = document.getElementsByTagName('div')[0];//获取div</div><div class="line">                var ospan = odiv.children;//获取div里面的所有元素[span, span]</div><div class="line">                var textleft =  ospan[0].offsetLeft;//获取下层字体的文档坐标值</div><div class="line">                var textwidth = ospan[0].offsetWidth;//获取下层文字的宽度</div><div class="line">                ospan[1].style.left = textleft+'px';//设置上层文字的坐标</div><div class="line">            &#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><strong>效果</strong><br><img src="/gallery/okview2.png" alt=""><br><strong>动画</strong><br>这样形成的效果其实已经出来了。<br>让动画播起来。<br>这里需要设置上层文字宽度，让其的宽在0-下层文字的宽度之间播放即开，需要开启定时器。学习的话重点在于学到它的核心，所以我们只做简单实现。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                <span class="keyword">var</span> odiv = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>)[<span class="number">0</span>];<span class="comment">//获取div</span></div><div class="line">                <span class="keyword">var</span> ospan = odiv.children;<span class="comment">//获取div里面的所有元素[span, span]</span></div><div class="line">                <span class="keyword">var</span> textleft =  ospan[<span class="number">0</span>].offsetLeft;<span class="comment">//获取下层字体的文档坐标值</span></div><div class="line">                <span class="keyword">var</span> textwidth = ospan[<span class="number">0</span>].offsetWidth;<span class="comment">//获取下层文字的宽度</span></div><div class="line">                ospan[<span class="number">1</span>].style.left = textleft+<span class="string">'px'</span>;<span class="comment">//设置上层文字的坐标</span></div><div class="line">                <span class="keyword">var</span> timer = <span class="literal">null</span>;<span class="comment">//声明定时器的名称</span></div><div class="line">                <span class="keyword">var</span> num = <span class="number">0</span>;<span class="comment">//声明累加器</span></div><div class="line">                timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//启动定时器</span></div><div class="line">                    num++;<span class="comment">//累加器生效</span></div><div class="line">                    <span class="comment">//判断里面是为了当累加器的值大于文字宽度之后就不再进行累加（即要停止定时器），并且要将累加器的值等于文字的宽度。</span></div><div class="line">                    <span class="keyword">if</span>(num&gt;textwidth)&#123;<span class="comment">//条件就是累加器的值大于文字之后不再进行累加</span></div><div class="line">                        num = textwidth;<span class="comment">//累加器的值等于文字的宽度</span></div><div class="line">                        clearInterval(timer);<span class="comment">//停止定时器</span></div><div class="line">                    &#125;;</div><div class="line">                    ospan[<span class="number">1</span>].style.width = num+<span class="string">'px'</span>;<span class="comment">//设置上层文字的宽度，让其动起来</span></div><div class="line">                &#125;,<span class="number">30</span>)</div><div class="line">            &#125;</div></pre></td></tr></table></figure></p>
+<p><strong>效果</strong><br><img src="/gallery/okview3.gif" alt=""><br><strong>文字渐变</strong><br>为了能够实现文字渐变的效果，这里说明一下现在流行的浏览器webkit内核才可以以看到这种效果。<br>重要核心使用以下三个属性<br>background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(146, 191,25, 1)), to(rgba(191, 230, 85, 1))); 进行填充背景颜色<br>-webkit-background-clip: text;以文字进行裁切背景颜色，即文字背景为渐变色<br>-webkit-text-fill-color: transparent;将文字填充色设置为透明色。这就是实现文字以渐变色显示的特点。<br><strong>代码</strong><br>这里我将CSS稍改了一下。将字体大小设置为2em即32像素。文字加粗，span标签颜色为白色background-color: #fff;<br>接着就是渐变设置。<br><strong>代码</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">            *&#123;margin: 0;padding: 0;list-style: none;border: none;&#125;</div><div class="line">            div&#123;width: 980px;line-height: 48px;position: relative;  text-align: center; margin: auto;&#125;</div><div class="line">            span&#123;background-color: #fff; height: 48px; overflow: hidden;font-size: 2em; text-shadow:-1px 0 0 rgba(0,0,0,.1); -webkit-background-clip: text;-webkit-text-fill-color: transparent; font-weight: bold; &#125;</div><div class="line">            span:nth-child(1)&#123; background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(43, 171,249, 1)), to(rgba(118, 218, 255, 0.8)));&#125;</div><div class="line">            span:nth-child(2)&#123;position: absolute;/*绝对定位*/left: 0;top: 0;  white-space: nowrap;/*让下层文字不换行，并且设置overflow:hidden。上面span已经对所有span设置overflow:hidden;故这里可以不设置*/ width: 0;background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(146, 191,25, 1)), to(rgba(191, 230, 85, 1)))&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>赞美你迎着风舞蹈<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>赞美你迎着风舞蹈<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">            <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                <span class="keyword">var</span> odiv = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>)[<span class="number">0</span>];<span class="comment">//获取div</span></div><div class="line">                <span class="keyword">var</span> ospan = odiv.children;<span class="comment">//获取div里面的所有元素[span, span]</span></div><div class="line">                <span class="keyword">var</span> textleft =  ospan[<span class="number">0</span>].offsetLeft;<span class="comment">//获取下层字体的文档坐标值</span></div><div class="line">                <span class="keyword">var</span> textwidth = ospan[<span class="number">0</span>].offsetWidth;<span class="comment">//获取下层文字的宽度</span></div><div class="line">                ospan[<span class="number">1</span>].style.left = textleft+<span class="string">'px'</span>;<span class="comment">//设置上层文字的坐标</span></div><div class="line">                <span class="keyword">var</span> timer = <span class="literal">null</span>;<span class="comment">//声明定时器的名称</span></div><div class="line">                <span class="keyword">var</span> num = <span class="number">0</span>;<span class="comment">//声明累加器</span></div><div class="line">                timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//启动定时器</span></div><div class="line">                    num++;<span class="comment">//累加器生效</span></div><div class="line">                    <span class="comment">//判断里面是为了当累加器的值大于文字宽度之后就不再进行累加（即要停止定时器），并且要将累加器的值等于文字的宽度。</span></div><div class="line">                    <span class="keyword">if</span>(num&gt;textwidth)&#123;<span class="comment">//条件就是累加器的值大于文字之后不再进行累加</span></div><div class="line">                        num = textwidth;<span class="comment">//累加器的值等于文字的宽度</span></div><div class="line">                        clearInterval(timer);<span class="comment">//停止定时器</span></div><div class="line">                    &#125;;</div><div class="line">                    ospan[<span class="number">1</span>].style.width = num+<span class="string">'px'</span>;<span class="comment">//设置上层文字的宽度，让其动起来</span></div><div class="line">                &#125;,<span class="number">30</span>)</div><div class="line">            &#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><strong>效果</strong><br><img src="/gallery/okview4.gif" alt=""><br><strong>总结</strong><br>其实这个效果非常简单。只要掌握原理就可以将其实现。祝玩的愉快。对了，注意请使用谷歌高版本浏览器。</p>
+<p><strong>代码：</strong><br><a href="https://github.com/yanmingfei/yanmingfei.github.io/blob/master/pages/kalaok/index.html">卡拉OK字体效果</a><br><strong>演示地址：</strong><br><a href="/pages/kalaok/">卡拉OK字体效果</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="https://github.com/yanmingfei/2016/12/20/网页UI-卡拉OK字体效果/" data-id="ciwymqjh9000eqcekawadv5yq" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://github.com/yanmingfei/2016/12/20/网页UI-卡拉OK字体效果/#comments" class="article-comment-link ds-thread-count" data-thread-key="https://github.com/yanmingfei/2016/12/20/网页UI-卡拉OK字体效果/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/12/21/网页UI-自定义单选复选框/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    网页UI-自定义单选复选框
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="2016/12/20/网页UI-卡拉OK字体效果/" data-title="卡拉OK字体效果" data-url="https://github.com/yanmingfei/2016/12/20/网页UI-卡拉OK字体效果/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
+</section>
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/21/网页UI-列表布局高级技巧/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/gallery/gride.png)" alt="网页UI-列表布局高级技巧" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
+                            <p class="item-title"><a href="/2016/12/21/网页UI-列表布局高级技巧/" class="title">网页UI-列表布局高级技巧</a></p>
+                            <p class="item-date"><time datetime="2016-12-21T03:27:17.000Z" itemprop="datePublished">2016-12-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/21/网页UI-css3投影效果/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/gallery/shadow.png)" alt="网页UI-css3投影效果" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
+                            <p class="item-title"><a href="/2016/12/21/网页UI-css3投影效果/" class="title">网页UI-css3投影效果</a></p>
+                            <p class="item-date"><time datetime="2016-12-21T03:24:03.000Z" itemprop="datePublished">2016-12-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/21/网页UI-自定义表单开关按钮/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/gallery/switch.png)" alt="网页UI-自定义表单开关按钮" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
+                            <p class="item-title"><a href="/2016/12/21/网页UI-自定义表单开关按钮/" class="title">网页UI-自定义表单开关按钮</a></p>
+                            <p class="item-date"><time datetime="2016-12-21T03:16:35.000Z" itemprop="datePublished">2016-12-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/21/网页UI-自定义表单输入框/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/gallery/input.jpg)" alt="网页UI-自定义表单输入框" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
+                            <p class="item-title"><a href="/2016/12/21/网页UI-自定义表单输入框/" class="title">网页UI-自定义表单输入框</a></p>
+                            <p class="item-date"><time datetime="2016-12-21T02:59:12.000Z" itemprop="datePublished">2016-12-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/21/网页UI-自定义滑杆组件/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/gallery/checkbox.png)" alt="网页UI-自定义滑杆组件" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
+                            <p class="item-title"><a href="/2016/12/21/网页UI-自定义滑杆组件/" class="title">网页UI-自定义滑杆组件</a></p>
+                            <p class="item-date"><time datetime="2016-12-21T02:49:33.000Z" itemprop="datePublished">2016-12-21</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">7</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">7</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3/">CSS3</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/CSS3/" style="font-size: 20px;">CSS3</a> <a href="/tags/HTML5/" style="font-size: 20px;">HTML5</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 赵延明<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'yanmingfei'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			div{
+				margin:100px auto;
+				width: 600px;
+			}
+			input[type="range"]{
+				width: 100%;
+				outline: none;
+				-webkit-appearance:none;
+				height: 2px;
+				background: deepskyblue;
+			}
+			input[type="range"]::-webkit-slider-thumb{
+				-webkit-appearance:none;
+				width: 20px;
+				height: 20px;
+				background: lightblue;
+				border-radius: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input type="range" min="0" max="100" value="0" step="1" />
+		</div>
+	</body>
+</html>

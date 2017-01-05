@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            *{margin: 0;padding: 0;list-style: none;border: none;}
+            div{width: 980px;line-height: 48px;position: relative;  text-align: center; margin: auto;}
+            span{background-color: #fff; height: 48px; overflow: hidden;font-size: 2em; text-shadow:-1px 0 0 rgba(0,0,0,.1); -webkit-background-clip: text;-webkit-text-fill-color: transparent; font-weight: bold; }
+            span:nth-child(1){ background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(43, 171,249, 1)), to(rgba(118, 218, 255, 0.8)));}
+            span:nth-child(2){position: absolute;/*绝对定位*/left: 0;top: 0;  white-space: nowrap;/*让下层文字不换行，并且设置overflow:hidden。上面span已经对所有span设置overflow:hidden;故这里可以不设置*/ width: 0;background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(146, 191,25, 1)), to(rgba(191, 230, 85, 1)))}
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>赞美你迎着风舞蹈</span>
+            <span>赞美你迎着风舞蹈</span>
+        </div>
+        <script>
+            window.onload = function(){
+                var odiv = document.getElementsByTagName('div')[0];//获取div
+                var ospan = odiv.children;//获取div里面的所有元素[span, span]
+                var textleft =  ospan[0].offsetLeft;//获取下层字体的文档坐标值
+                var textwidth = ospan[0].offsetWidth;//获取下层文字的宽度
+                ospan[1].style.left = textleft+'px';//设置上层文字的坐标
+                var timer = null;//声明定时器的名称
+                var num = 0;//声明累加器
+                timer = setInterval(function(){//启动定时器
+                    num++;//累加器生效
+                    //判断里面是为了当累加器的值大于文字宽度之后就不再进行累加（即要停止定时器），并且要将累加器的值等于文字的宽度。
+                    if(num>textwidth){//条件就是累加器的值大于文字之后不再进行累加
+                        num = textwidth;//累加器的值等于文字的宽度
+                        clearInterval(timer);//停止定时器
+                    };
+                    ospan[1].style.width = num+'px';//设置上层文字的宽度，让其动起来
+                },30)
+            }
+        </script>
+    </body>
+</html>

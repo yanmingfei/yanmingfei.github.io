@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			div{
+				width: 600px;
+				margin: 100px auto;
+				position: relative;
+			}
+			div:before,div:after{
+				display: block;
+				content: " ";
+				height: 20px;
+				border-left: 1px solid #fff;
+				position: absolute;
+				top: 0;
+			}
+			div:before{
+				left: 0;
+			}
+			div:after{
+				right: 0;
+			}
+			input{
+				-webkit-appearance: none;
+				transition: all 0.3s;
+				vertical-align: top;
+				box-sizing: border-box;
+				border: 1px solid #1E90FF;
+				border-width: 0 1px 1px 1px;
+				width: 100%;
+				outline: none;
+				padding: 5px;
+			}
+			input:focus{
+				border-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input type="text" />
+		</div>
+	</body>
+</html>
