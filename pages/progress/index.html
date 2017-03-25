@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				padding:2% 10%;
+			}
+			h1 {
+				color: #666;
+				padding:3% 0;
+			}
+			progress,
+			progress::-webkit-progress-bar {
+				height: 15px;
+				display: block;
+				background: #ccc;
+				width: 100%;
+				border-radius: 8px;
+				color: #fff;
+				margin-bottom: 20px;
+			}
+			progress::-webkit-progress-value {
+				height: 15px;
+				display: block;
+				background-color: #5cb85c;
+				background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+				width: 50%;
+				border-radius: 8px 0 0 8px;
+				color: #fff;
+			}
+			.success::-webkit-progress-value{
+				background-color: #5cb85c;
+			}
+			.info::-webkit-progress-value{
+				background-color: #5bc0de;
+			}
+			.warning::-webkit-progress-value{
+				background-color: #f0ad4e;
+			}
+			.danger::-webkit-progress-value{
+				background-color: #d9534f;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>html5进度条</h1>
+		<progress class="success" value="50" max="100"></progress>
+		<progress class="info" value="50" max="100"></progress>
+		<progress class="warning " value="50" max="100"></progress>
+		<progress class="danger " value="50" max="100"></progress>
+	</body>
+</html>
