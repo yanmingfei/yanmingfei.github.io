@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小码哥网页UI学院</title>
+		<style>
+			*{	margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			body{
+				background: #000;
+			}
+			.text{
+				width: 1200px;
+				height: 250px;
+				overflow: hidden;
+				background: pink;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				filter: contrast(110%) brightness(190%);
+			}
+			h1{
+				font: 700 220px sans-serif;
+				text-align: center;
+				color: transparent;
+				background: #000;
+			}
+			h1:before,h1:after{
+				color: white;
+				content: attr(text);
+				 position: absolute;
+				 left: 0;
+				 top: 0;
+				 width: 100%;
+				 filter: blur(0.02em);
+			}
+			h1:after{
+				mix-blend-mode:difference;
+			}
+			.gradient,.radial{
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;	
+			}
+			.gradient{
+				background: linear-gradient(45deg,red,blue);
+				mix-blend-mode:multiply;
+			}
+			.radial{	
+				background: 
+					radial-gradient(circle,#fff,rgba(0,0,0,0) 25%) 0 0/25% 25%,
+					radial-gradient(circle,#fff,#000 25%) 50% 50%/12.5% 12.5%
+				;
+				mix-blend-mode:color-dodge;
+				animation: play 5s linear infinite;
+				left:-100%;
+				top:-100%;
+			}
+			@keyframes play{
+				from{ transform: translate(0,0);}
+				to{ transform: translate(50%,50%)}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="text">
+			<h1 text="网页UI学院">网页UI学院</h1>
+			<div class="gradient"></div>
+			<div class="radial"></div>
+		</div>
+	</body>
+</html>
