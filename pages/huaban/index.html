@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>花瓣飄落效果</title>
+		<style>
+			*{	
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			body{	
+				min-height: 2000px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container"></div>
+		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+		<script src="jquery-mousestorm.min.js"></script>
+		<script>
+			$(function(){	
+				$('.container').mousestorm({
+					images: ['shubiao/01.png', 'shubiao/02.png', 'shubiao/03.png', 'shubiao/04.png', 'shubiao/05.png'], //粒子图片数组。
+					opacity: [0.3, 0.96], //粒子透明度范围0.2-0.96。粒子随机透明度范围
+					time: [2000, 3000], //粒子运动的时间2000-3000毫秒
+					rotate: [360, 720], //旋转度数,随机旋转
+					scale: [0.4, 0.8], //粒子缩放范围 原图片的倍数0.3-0.7。粒子的随机大小范围
+					diepresent: 0.2, //粒子生长到消失的范围，屏幕宽度取0.4的倍数。 数值越大粒子运动的越远，数值越小粒子运动的越近 建议0.4
+					numpresent: 0.04 //粒子产生数量限制比例 数值越小 创建 的也越小，数值越大创建的也越多建议0.03
+				})
+			})
+		</script>
+	</body>
+</html>
