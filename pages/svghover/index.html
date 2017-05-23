@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			
+			body {
+				background: #E74C3C;
+			}
+			
+			img {
+				display: block;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.all {
+				width: 730px;
+				margin: 100px auto;
+			}
+			
+			.all li {
+				position: relative;
+				float: left;
+				width: 230px;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			
+			.all li img {
+				width: 100%;
+				position: relative;
+				z-index: 0;
+				height: auto;
+			}
+			
+			.all li:nth-child(3n) {
+				margin-right: 0;
+			}
+			
+			.all li:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .3);
+				z-index: 1;
+				transition: all .3s;
+			}
+			
+			.all li section {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				text-align: center;
+				z-index: 3;
+			}
+			.all li h2 {
+				color: #e74c3c;
+				font-weight: normal;
+				height: 70px;
+				line-height: 70px;
+				margin: 50px auto 10px;
+				transition: all .3s;
+			}
+			.all li p{
+				transition: all .3s;
+				color: #aaa;
+				display: block;
+				padding-bottom:10px;
+			}
+			.all li a{
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				border: 3px solid #fff;
+				text-align: center;
+				line-height: 40px;
+				color: #fff;
+				padding: 0 10px;
+				transform: scale(0);
+				opacity: 0;
+				z-index: 3;
+				transition: all .3s;
+				font-weight: bold;
+				background: rgba(255,255,255,0.1);
+			}
+			.all li:hover h2{
+				margin-top: 0;
+				height: 40px;
+				line-height: 40px;;
+			}
+			.all li:hover p{
+				opacity: 0;
+				display: none;
+			}
+			.all li:hover a{
+				transform: scale(1);
+				opacity: 1;
+			}
+			.all li:hover:after{
+				background: rgba(0,0,0,0.2);
+			}
+			.all svg{
+				position: absolute;
+				left:0;
+				top:0;
+				z-index: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<ul class="all" id="all">
+			<li data-path-type = "circle">
+				<section>
+					<h2>小码哥网页UI学院</h2>
+					<p>广州校区</p>
+				</section>
+				<img src="images/01.jpg" />
+				<a href="http://www.">查看</a>
+			</li>
+			<li data-path-type="echelon" >
+				<section>
+					<h2>小码哥网页UI学院</h2>
+					<p>北京校区</p>
+				</section>
+				<img src="images/02.jpg" />
+				<a href="#">查看</a>
+			</li>
+			<li data-path-type="star">
+				<section>
+					<h2>网页UI字体设计</h2>
+					<p>广州校区</p>
+				</section>
+				<img src="images/03.jpg" />
+				<a href="#">查看</a>
+			</li>
+		</ul>
+		<script type="text/javascript" src="snap.svg-min.js"></script>
+		<script type="text/javascript" src="snap-pathanimation.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				pathAnimation(document.getElementById('all').getElementsByTagName('li'))
+			}
+		</script>
+	</body>
+</html>
