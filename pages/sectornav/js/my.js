@@ -20,7 +20,7 @@ window.onload = function() {
 			return;
 		}else{
 			onav.className = ''
-			this.innerHTML = '+'
+			obutton.innerHTML = '+'
 		}
 	};
 };
