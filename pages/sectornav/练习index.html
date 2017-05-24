@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+			button{
+				background: #fff;
+			}
+			body {
+				background: #f06060;
+				color: #fff;
+				font-size: 20px;
+			}
+			.container {
+				width: 80%;
+				margin: 100px auto;
+				position: relative;
+				z-index: 1;
+			}
+			.iconfont {
+				font-size: 30px;
+			}
+			
+			nav{
+				width: 300px;
+				height: 300px;
+				position: fixed;
+				left:50%;
+				margin-left: -150px;
+				bottom:-150px;
+				border-radius: 50%;
+				z-index: 2;
+			}
+			nav ul{
+				transform: scale(0);
+				opacity: 0;
+				position: absolute;
+				width: 300px;
+				height: 300px;
+				background:tomato;
+				left: 0;
+				top: 0;
+				border-radius: 50%;
+				overflow: hidden;
+				z-index: 1;
+				transition: all .3s;
+			}
+			nav li{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				left:50%;
+				top: 0;
+				margin-left: -150px;
+				/*指定好旋转的起源中心在右下角*/
+				transform-origin: 100% 100%;
+				/*先旋转再斜切*/
+				transform:rotate(0deg)  skew(60deg);
+				background:tomato;
+				overflow: hidden;
+				transition: all .3s;
+			}
+			nav li:nth-of-type(2){
+				transform:rotate(30deg)  skew(60deg);
+			}
+			nav li:nth-of-type(3){
+				transform:rotate(60deg)  skew(60deg);
+			}
+			nav li:nth-of-type(4){
+				transform:rotate(90deg)  skew(60deg);
+			}
+			nav li:nth-of-type(5){
+				transform:rotate(120deg)  skew(60deg);
+			}
+			nav li:nth-of-type(6){
+				transform:rotate(150deg)  skew(60deg);
+			}
+			nav li:nth-of-type(2n){
+				background:rgb(255, 114, 88)
+			}
+			nav li a{
+				text-align: center;
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				left: 0;
+				top:0;
+				transform: skew(-60deg) rotate(-75deg);
+			}
+			nav li span{
+				display: block;
+				margin-top: 20px;
+			}
+			nav button{
+				width: 100px; 
+				height: 100px;
+				position: absolute;
+				left: 50%;
+				top:50%;
+				margin-left: -50px;
+				margin-top: -50px;
+				z-index: 2;
+				border-radius: 50%;
+				padding-bottom: 35px;
+				font-size: 28px;
+				color: tomato;
+				box-shadow: 0 0 10px;
+				cursor: pointer;
+				transition: all .3s;
+			}
+			nav button:hover{
+				color: #ff2700;
+			}
+			
+			nav li:hover{
+				background: #fd8f58;
+			}
+			nav li:nth-of-type(2n):hover{
+				background: #e8300f;
+			}
+			.active ul{
+				box-shadow: 0 0 0 1000px rgba(0,0,0,0.3);
+				transform: scale(1);
+				opacity: 1;
+			}
+		</style>
+
+	</head>
+	<body>
+		<nav id="nav">
+			<button>+</button>
+			<ul>
+				<li>
+					<a href="http://www.520it.com/special/ui"><span class="iconfont icon-jushoucang"></span></a>
+				</li>
+				<li>
+					<a href="http://www.520it.com/special/ui"><span class="iconfont icon-naozhong"></span></a>
+				</li>
+				<li>
+					<a href="http://www.520it.com/special/ui"><span class="iconfont icon-shezhi"></span></a>
+				</li>
+				<li>
+					<a href="http://www.520it.com/special/ui"><span class="iconfont icon-shouye"></span></a>
+				</li>
+				<li>
+					<a href="http://www.520it.com/special/ui"><span class="iconfont icon-lingcunwei"></span></a>
+				</li>
+				<li>
+					<a href="http://www.520it.com/special/ui"><span class="iconfont icon-liwu"></span></a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<h3>为什么要选择小码哥网页UI</h3><br />
+			<p>
+				网页UI设计是目前中国信息产业中最为抢手的人才之一，设计人才缺口高达上千万，就业无忧拿高薪</p><br />
+			<h3>覆盖范围广</h3><br />
+			<p>
+				几乎一切互联网企业都需要网页UI设计来帮助其实现web及手机端页面的设计与制作，堪称时下互联网行业的“金饭碗”。
+			</p><br />
+			<h3>人才需求量大</h3><br />
+			<p>
+				据统计，仅2016年全国主要一线城市对网页UI设计师的人才需求量就已超过400000人，未来对UI设计人才需求量之大将超乎想象！
+			</p><br />
+			<h3>入行门槛低</h3><br />
+			<p>
+				无论你是什么学历，也不管你过往有无经验，只要你有一颗积极进取的心，全心投入学习，就能轻松在职场上游刃有余。
+			</p><br />
+			<h3>发展空间大</h3><br />
+			<p>
+				网页UI设计行业潜力无限一片蓝天！会代码的设计师更是稀缺人才，工资逐年升高，发展空间越来越大，越来越吃香。
+			</p><br />
+			<h3>从设计到代码让你在职场游刃有</h3><br />
+			<p>
+				软件基础+平面设计+网页设计+UI设计+网站制作基础+网站项目实战+JavaScript交互+响应式网站 高质量课程体系·综合设计师一步到位
+			</p><br />
+		</div>
+		<script type="text/javascript" src="js/my.js"></script>
+	</body>
+</html>
