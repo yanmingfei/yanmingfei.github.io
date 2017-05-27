@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: none;
+			}
+			.banner{
+				width:1100px;
+				height: 500px;
+				margin: 100px auto;
+			}
+			body{
+				overflow: hidden;
+			}
+		</style>
+		<link rel="stylesheet" href="bomb.css" />
+	</head>
+	<body>
+		<div class="banner">
+			<ul>
+				<li><a href="http://www.520it.com"><img src="images/banner/1.jpg"/></a></li>
+				<li><a href="http://bbs.520it.com"><img src="images/banner/2.jpg"/></a></li>
+				<li><a href="http://www.520it.com/special/ui"><img src="images/banner/3.jpg"/></a></li>
+				<li><a href="http://www.520it.com/zt/bj-ui/"><img src="images/banner/4.jpg"/></a></li>
+				<li><a href="http://www.520it.com/zt/ztsjkc/"><img src="images/banner/5.jpg"/></a></li>
+				<li><a href="http://bbs.520it.com/forum.php?mod=viewthread&tid=4668&page=1&extra=#pid81757"><img src="images/banner/6.jpg"/></a></li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="jquery-bomb.min.js"></script>
+		<script type="text/javascript">
+			$(function(){	
+				$('.banner').bomb({
+					//col:3, //最小不要小于2，小于2之后会默认显示2 最大不要超过10
+					//row:3 //最小不要小于2，小于2之后会默认显示2 最大不要超过10
+				});
+			})
+		</script>
+		
+		
+	</body>
+</html>
