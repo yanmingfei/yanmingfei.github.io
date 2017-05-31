@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+    }
+    
+    canvas {
+        display: block;
+    }
+    
+    body {
+        background: #eee;
+    }
+    
+    #box img {
+        display: none;
+    }
+    
+    label {
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+    
+    button,
+    [type="button"] {
+        overflow: hidden;
+        cursor: pointer;
+        color: #fff;
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid #2e6da4;
+        border-radius: 4px;
+        background-color: #337ab7;
+    }
+    
+    input[type="file"] {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    .pox {
+        width: 600px;
+        margin: 20px auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="pox">
+        <button>
+            <label for="file">上传图片</label>
+            <input type="file" name="myfile" id="file" accept="image/*" multiple>
+        </button>
+        <input style="float:right;" type="button" value="下载精灵图" id="button">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script>
+    window.onload = function() {
+        var obox = document.getElementById('box');
+        var ofile = document.getElementById('file');
+        var ocanvas = document.getElementById('canvas');
+        var obtn = document.getElementById('button');
+        var cxt = ocanvas.getContext('2d');
+        var num = 0;
+        var btn = false;
+        file.onchange = function(event) {
+            var files = this.files;
+            var length = files.length;
+            if (!files.length) return;
+            for (var i = 0; i < files.length; i++) {
+                var reader = new FileReader();
+                reader.readAsDataURL(files[i]);;
+                (function(i, reader) {
+                    reader.onload = function(evt) {
+                        var imgsrc = evt.target.result;
+                        drawimg(imgsrc, 0, i, length);
+                    }
+                })(i, reader);
+            }
+        }
+
+        function drawimg(src, x, i, len) {
+            var image = new Image();
+            image.src = src;
+            var y = 0;
+            image.onload = function() {
+                y = this.height * i;
+                if (i == 0) {
+                    ocanvas.width = this.width;
+                    ocanvas.height = this.height * len;
+                }
+                cxt.drawImage(this, x, y, this.width, this.height);
+                if (i == len - 1) {
+                    btn = true;
+                }
+            }
+        }
+
+        obtn.onclick = function() {
+            if (btn) {
+                download('png')
+            } else {
+                alert('请等待');
+            }
+        }
+
+        function download(type) {
+            //设置保存图片的类型
+            var imgdata = ocanvas.toDataURL(type);
+            //将mime-type改为image/octet-stream,强制让浏览器下载
+            var fixtype = function(type) {
+                //将jpg格式化转成为jpeg格式;
+                type = type.toLocaleLowerCase().replace(/jpg/i, 'jpeg');
+                var r = type.match(/png|jpeg|bmp|gif/)[0];
+                return 'image/' + r;
+            }
+            imgdata = imgdata.replace(fixtype(type), 'image/octet-stream')
+                //将图片保存到本地
+            var saveFile = function(data, filename) {
+                var link = document.createElement('a');
+                link.href = data;
+                link.download = filename;
+                var event = document.createEvent('MouseEvents');
+                event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                link.dispatchEvent(event);
+            }
+            var filename = new Date().toLocaleDateString() + '-' + new Date().getTime() + '.' + type;
+            saveFile(imgdata, filename);
+        }
+
+    }
+    </script>
+</body>
+
+</html>
