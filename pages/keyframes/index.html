@@ -10,6 +10,33 @@
 				list-style: none;
 				border: none;
 			}
+			body{
+				background: #e84c3d;
+			 	text-align: center;
+			}
+			button{
+				cursor: pointer;
+				padding: 5px 20px;
+				background:#ff6252;
+				box-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+				color: #fff;
+				font-size: 16px;
+				margin-right: 20px;
+				outline: none;
+				border-radius: 3px
+			}
+			button:hover{
+
+    			background-color:#c82313 ;
+			    border-color: #adadad;
+			}
+			button:focus{
+				background: #c81200;
+			}
+			button:active{
+			    background-color: #c81200;
+			}
+			
 			div{
 				margin: 100px auto;
 				width:240px;
@@ -25,5 +52,18 @@
 	</head>
 	<body>
 	<div></div>
+	<button>暂停</button>
+	<button>播放</button>
 	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var eles = document.body.children;
+			eles[1].onclick = function(){
+				eles[0].style.animationPlayState = 'paused'
+			}
+			eles[2].onclick = function(){
+				eles[0].style.animationPlayState = 'running'
+			}
+		}
+	</script>
 </html>
