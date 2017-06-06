@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>表面破碎效果</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		border: none;
+		box-sizing: border-box;
+	}
+	body{
+		background:tan;
+	}
+	.all{
+		width: 430px;
+		margin: 150px auto;
+	}
+	.all img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 0;
+	}
+	.all li{
+		float: left;
+		width: 100px;
+		height: 100px;
+		border-radius: 100%;
+		border-width:50px;
+		border-style:solid;
+		border-color: rgba(0,0,0,.6);
+		display: block;
+		margin: 0 10px 10px 0;
+		transition:all 0.5s;
+		position: relative;
+		cursor: pointer;
+		overflow: hidden;
+		box-shadow: 0 0 10px rgba(255,255,255,.9);
+	}
+	.all li:nth-of-type(4n){
+		margin: 0;
+	}
+	.all li:nth-child(1n){
+		border-style: solid;
+	}
+	.all li:nth-child(2n){
+		border-style: dashed;
+	}
+	.all li:nth-of-type(3n){
+		border-style: dotted;
+	}
+	.all li:nth-of-type(4n){
+		border-style: double;
+	}
+	.all li[zu1]{
+		border-color: rgba(0,0,0,0)
+	}
+	.all li[zu1]:hover{
+		border-width: 0;
+        border-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.all li[zu2]:hover{
+		border-width: 0;
+        border-color: rgba(0, 0, 0, 0.5);
+	}
+	.all li[zu3]{
+		border-radius: 0;
+	}
+	.all li[zu3]{
+		border-radius: 0
+	}
+	
+	.all li[zu3]:hover{
+		border-width: 0;
+		border-radius: 0;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="all">
+		<ul>
+			<li zu1><img src="icons/1.jpg" alt="" height="380" width="380"></li>
+			<li zu1><img src="icons/2.jpg" alt="" height="380" width="380"></li>
+			<li zu1><img src="icons/3.jpg" alt="" height="380" width="380"></li>
+			<li zu1><img src="icons/4.jpg" alt="" height="380" width="380"></li>
+			<li zu2><img src="icons/5.jpg" alt="" height="380" width="380"></li>
+			<li zu2><img src="icons/6.jpg" alt="" height="380" width="380"></li>
+			<li zu2><img src="icons/7.jpg" alt="" height="380" width="380"></li>
+			<li zu2><img src="icons/8.jpg" alt="" height="380" width="380"></li>
+			<li zu3><img src="icons/9.jpg" alt="" height="380" width="380"></li>
+			<li zu3><img src="icons/10.jpg" alt="" height="380" width="380"></li>
+			<li zu3><img src="icons/11.jpg" alt="" height="380" width="380"></li>
+			<li zu3><img src="icons/12.jpg" alt="" height="380" width="380"></li>
+		</ul>
+	</div>
+</body>
+</html>
