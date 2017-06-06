@@ -42,41 +42,37 @@
 		overflow: hidden;
 		box-shadow: 0 0 10px rgba(255,255,255,.9);
 	}
-	.all li:nth-of-type(4n){
+	.all ul li:nth-of-type(4){
 		margin: 0;
 	}
-	.all li:nth-child(1n){
+	.all ul li:nth-of-type(1){
 		border-style: solid;
 	}
-	.all li:nth-child(2n){
+	.all ul li:nth-of-type(2){
 		border-style: dashed;
 	}
-	.all li:nth-of-type(3n){
+	.all ul li:nth-of-type(3){
 		border-style: dotted;
 	}
-	.all li:nth-of-type(4n){
+	.all ul li:nth-of-type(4){
 		border-style: double;
 	}
-	.all li[zu1]{
+	.all ul:nth-of-type(1) li{
 		border-color: rgba(0,0,0,0)
 	}
-	.all li[zu1]:hover{
+	.all ul:nth-of-type(1) li:hover{
 		border-width: 0;
         border-color: rgba(0, 0, 0, 0.6);
 	}
 
-	.all li[zu2]:hover{
+	.all ul:nth-of-type(2) li:hover{
 		border-width: 0;
         border-color: rgba(0, 0, 0, 0.5);
 	}
-	.all li[zu3]{
+	.all ul:nth-of-type(3) li{
 		border-radius: 0;
 	}
-	.all li[zu3]{
-		border-radius: 0
-	}
-	
-	.all li[zu3]:hover{
+	.all ul:nth-of-type(3) li:hover{
 		border-width: 0;
 		border-radius: 0;
 	}
@@ -86,19 +82,23 @@
 <body>
 	<div class="all">
 		<ul>
-			<li zu1><img src="icons/1.jpg" alt="" height="380" width="380"></li>
-			<li zu1><img src="icons/2.jpg" alt="" height="380" width="380"></li>
-			<li zu1><img src="icons/3.jpg" alt="" height="380" width="380"></li>
-			<li zu1><img src="icons/4.jpg" alt="" height="380" width="380"></li>
-			<li zu2><img src="icons/5.jpg" alt="" height="380" width="380"></li>
-			<li zu2><img src="icons/6.jpg" alt="" height="380" width="380"></li>
-			<li zu2><img src="icons/7.jpg" alt="" height="380" width="380"></li>
-			<li zu2><img src="icons/8.jpg" alt="" height="380" width="380"></li>
-			<li zu3><img src="icons/9.jpg" alt="" height="380" width="380"></li>
-			<li zu3><img src="icons/10.jpg" alt="" height="380" width="380"></li>
-			<li zu3><img src="icons/11.jpg" alt="" height="380" width="380"></li>
-			<li zu3><img src="icons/12.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/1.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/2.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/3.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/4.jpg" alt="" height="380" width="380"></li>
 		</ul>
+		<ul>	
+			<li ><img src="icons/5.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/6.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/7.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/8.jpg" alt="" height="380" width="380"></li>
+		</ul>
+		<ul>
+			<li ><img src="icons/9.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/10.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/11.jpg" alt="" height="380" width="380"></li>
+			<li ><img src="icons/12.jpg" alt="" height="380" width="380"></li>
+		</ul>	
 	</div>
 </body>
 </html>
