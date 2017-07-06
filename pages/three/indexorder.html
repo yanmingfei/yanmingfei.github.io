@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style>
+    	body{background: #6775ff;}
+		*{margin: 0;padding: 0; list-style: none; border: none;}
+		.con{width: 640px;   margin: 200px auto; }
+		.warp{ width: 100px; height: 100px; transform: rotate(45deg);}
+		.warp .crop{ width: 100px; height: 100px; transform: skew(20deg,20deg) translateX(25%) translateY(25%);overflow: hidden;}
+		.warp img{transform: skew(-20deg,-20deg) rotate(-45deg) translateY(-60px) ;}
+		.li{width: 80px; height: 100px; float: left;}
+		.li:nth-of-type(even) { transform: translateY(-6px)}
+		.li:nth-of-type(even) .crop{
+			transform: skew(20deg,20deg) translateX(-25%) translateY(-25%);
+		}
+		.li:nth-of-type(even) img{
+			transform: skew(-20deg,-20deg) rotate(-45deg) translateY(60px) ;
+		}
+		</style>
+</head>
+
+<body>
+	<div class="con">
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/1.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/2.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/3.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/4.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/5.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/6.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/7.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="icons/8.jpg" height="100" width="100" alt="">
+				</div>
+			</div>
+		</div>
+
+		
+		
+	</div>
+</body>
+</html>

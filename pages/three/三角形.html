@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style>
+		*{margin: 0; padding: 0; list-style: none; border: none;}
+		body{background: #6775ff;}
+		.container{ width:640px; margin: 200px auto;}
+		.li{ width:160px; height: 160px; float: left;  overflow: hidden;}
+		/*旋转45度形成菱形*/
+		.warp{width: 160px; height: 160px;transform: rotate(45deg) ; display: inline-block;}
+		/*形成拉长的菱形*/
+		.warp .crop{width: 160px; height: 160px; transform: skew(20deg,20deg) translate(40px,40px); overflow: hidden; }
+		/*图片转换成原形，并且不旋转，使用其中的一半，将图片完全显示*/
+		.warp img{width: 160px; height: 160px; transform: skew(-20deg,-20deg) rotate(-45deg) translateY(-100px);}
+		.li:nth-of-type(even) .warp{
+			transform: rotate(225deg) ;
+		}
+		.li:nth-of-type(even) img{width: 160px; height: 160px; transform: skew(-20deg,-20deg) rotate(-225deg) translateY(100px);}
+
+    </style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="128.jpg" height="160" width="160" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="avatar.jpg" height="160" width="160" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="128.jpg" height="160" width="160" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="li">
+			<div class="warp">
+				<div class="crop">
+					<img src="avatar.jpg" height="160" width="160" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
