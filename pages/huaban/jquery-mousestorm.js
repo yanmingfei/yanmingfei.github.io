@@ -21,7 +21,7 @@
 		};
 		var opts = $.extend({}, defaults, options); //将参数合并，并覆盖
 		//创建style标签，加入文档
-		$('head').append($('<style id="mouseStorm">.container img{position:absolute;left:0;top:0; transform:rotate(0deg); z-index: 999;}</style>'));
+		$('head').append($('<style id="mouseStorm">'+this.selector+' img{position:absolute;left:0;top:0; transform:rotate(0deg); z-index: 999;}</style>'));
 
 		//添加动画关键帧
 		createkeyframes();
