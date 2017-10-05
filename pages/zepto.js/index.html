@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style>
+			body{
+				touch-action: none;
+			}
+			div{width: 100px; height: 100px;background: pink;border: 1px solid #000; position: absolute;left: 50%; top: 50%; transform: translate(-50%,-50%);}
+		</style>
+		<script src="zepto.min.js"></script>
+		<script src="touch.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('div').swipeLeft(function(){
+					$(this).css({'margin-left':'-100px','transition':'0.3s'})
+				})
+				$('div').swipeRight(function(){
+					$(this).css({'margin-left':'100px','transition':'0.3s'})
+				})
+				$('div').swipeUp(function(){
+					$(this).css({'margin-top':'-100px','transition':'0.3s'})
+				})
+				$('div').swipeDown(function(){
+					$(this).css({'margin-top':'100px','transition':'0.3s'})
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
