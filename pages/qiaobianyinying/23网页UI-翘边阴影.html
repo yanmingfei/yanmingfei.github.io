@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0; list-style: none; border: none;}
+			body{
+				background: #eee;
+			}
+			img{
+				vertical-align: top;
+			}
+			div{width: 1030px; height: 500px; margin: 100px auto;}
+			li{
+				width: 500px;
+				float: left;
+				background: #fff;
+				margin-right: 30px;
+				border-radius: 10px;
+				position: relative;
+			}
+			li:before{
+				content: "";
+				width: 90%;
+				height: 80%;
+				position: absolute;
+				background: #fff;
+				left: 27px;
+    			bottom: 21px;
+				transform:skew(-10deg,-5deg);
+				box-shadow: 0 8px 30px 5px rgba(0,0,0,0.8);
+				z-index: -1;
+			}
+			li:after{
+				content: "";
+				width: 90%;
+				height: 80%;
+				position: absolute;
+				background: #fff;
+				right: 27px;
+    			bottom: 21px;
+				transform:skew(10deg,5deg);
+				box-shadow: 0 8px 30px 5px rgba(0,0,0,0.8);
+				z-index: -1;
+			}
+			li:nth-of-type(2){
+				margin-right: 0;
+			}
+			img{
+				width: 460px;
+				height: 276px;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li><img src="images/01.jpg"/></li>
+				<li><img src="images/02.jpg"/></li>
+			</ul>
+		</div>
+	</body>
+</html>
