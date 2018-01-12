@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 500px;
+				height: 500px;
+				line-height: 500px;
+				background: pink;
+				margin: 100px auto;
+				text-align: center;
+				filter: contrast(20);
+			}
+			.box:before,.box:after{
+				content: "";
+				width: 100px;
+				height: 100px;
+				background: red;
+				border-radius: 50%;
+				display: inline-block;
+				vertical-align: middle;
+				filter: blur(10px);
+			}
+			.box:after{
+				position: relative;
+				animation: dong 3s linear infinite alternate;
+				
+			}
+			@keyframes dong{
+				from{left:-250px;}
+				to{ left: 100px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+		
+	</body>
+</html>
