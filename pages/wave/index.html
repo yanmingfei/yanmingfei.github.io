@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0; list-style: none; border: none;}
+			body{ font-family: "微软雅黑"; font-size: 14px; color:#333;}
+			h2{ font-size: 14px; font-weight: normal;}
+			.nav{width: 900px; margin: 100px auto; height: 40px; line-height: 40px; background: pink;}
+			.nav>li{width: 150px; float: left; text-align: center; background: #ebebeb; cursor: pointer;}
+			.nav h2{ background:#9dc852 ;border-color: #9dc852; color: #fff; font-size: 16px; position: relative;}
+			.nav>li:nth-of-type(2) h2{background: #4e96b3;border-color: #4e96b3;}
+			.nav>li:nth-of-type(3) h2{background: #c97676;border-color: #c97676;}
+			.nav>li:nth-of-type(4) h2{background: #ee8037;border-color: #ee8037;}
+			.nav>li:nth-of-type(5) h2{background: #20cebc;border-color: #20cebc;}
+			.nav>li:nth-of-type(6) h2{background: #d1509c;border-color: #d1509c;}
+			
+			.nav h2:before{content: ""; position: absolute;left:0; top:100%; border: 75px solid transparent; border-bottom: 0; border-top-width:5px ;border-top-color: inherit; transition: all 0.2s 0.2s ease-in;}
+			.nav h2:after{content: ""; position: absolute;left:0; bottom:0; border: 75px solid transparent; border-top: 0; border-bottom-width:0px ;border-bottom-color:#ebebeb; transition: all 0.2s;transition: all 0.2s ease-in;}
+			
+			.nav>li:hover h2:before{ border-top-width: 0;transition: all ease-out;}
+			
+			.nav>li:hover h2:after{ border-bottom-width: 5px;transition: all 0.2s ease-out;}
+			
+			.nav ol{ padding:4px 0; position: relative; transition: all 0.2s}
+			
+			.nav>li:hover ol{ padding: 15px;}
+			
+			.nav ol:after{content: ""; position: absolute;left:0; top:100%; border: 75px solid transparent; border-bottom: 0; border-top-width:5px ;border-top-color:#ebebeb;}
+			.nav ol li{ height: 0; overflow: hidden;transition: all 0.4s,opacity 0.4s 0.1s; opacity: 0;}
+			.nav>li:hover ol li{ height: 30px; line-height: 30px; opacity: 1;}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li>
+				<h2>UI学院</h2>
+				<ol>
+					<li>UI</li>
+					<li>C4D</li>
+					<li>手绘</li>
+					<li>JS</li>
+					<li>JQuery</li>
+					<li>小程序</li>
+				</ol>
+			</li>
+			<li>
+				<h2>UI学院</h2>
+				<ol>
+					<li>UI</li>
+					<li>C4D</li>
+					<li>手绘</li>
+					<li>JS</li>
+					<li>JQuery</li>
+					<li>小程序</li>
+				</ol>
+			</li>
+			<li>
+				<h2>UI学院</h2>
+				<ol>
+					<li>UI</li>
+					<li>C4D</li>
+					<li>手绘</li>
+					<li>JS</li>
+					<li>JQuery</li>
+					<li>小程序</li>
+				</ol>
+			</li>
+			<li>
+				<h2>UI学院</h2>
+				<ol>
+					<li>UI</li>
+					<li>C4D</li>
+					<li>手绘</li>
+					<li>JS</li>
+					<li>JQuery</li>
+					<li>小程序</li>
+				</ol>
+			</li>
+			<li>
+				<h2>UI学院</h2>
+				<ol>
+					<li>UI</li>
+					<li>C4D</li>
+					<li>手绘</li>
+					<li>JS</li>
+					<li>JQuery</li>
+					<li>小程序</li>
+				</ol>
+			</li>
+			<li>
+				<h2>UI学院</h2>
+				<ol>
+					<li>UI</li>
+					<li>C4D</li>
+					<li>手绘</li>
+					<li>JS</li>
+					<li>JQuery</li>
+					<li>小程序</li>
+				</ol>
+			</li>
+		</ul>
+	</body>
+</html>
