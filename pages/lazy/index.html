@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0; list-style: none; border: none;}
+			.container{ width: 1200px; overflow: hidden; margin:10px auto 0;}
+			.container ul{width: 1230px;}
+			.container ul li{width: 395px; height: 222px; overflow: hidden; float: left; margin: 0 10px 10px 0;}
+			.container ul li img{ width: 100%; height: auto;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<ul>
+				
+			</ul>
+		</div>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/jquery.lazyload.min.js"></script>
+		<script>
+			$(function(){
+				$.get('js/data.json',function(data){
+					
+					//处理数据创建图片节点
+					$.each(data.video, function(index,item) {
+						var newtag = $('<li>\
+											<img src="images/loding.png" data-original="'+item.banner+'" alt="" />\
+										</li>')
+						$('.container ul').append(newtag);
+					});
+					//延迟加载
+					
+					$('.container img').lazyload({
+						effect:'fadeIn'
+					})
+					
+				})
+			})
+		</script>
+	</body>
+</html>
