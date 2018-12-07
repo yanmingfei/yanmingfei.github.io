@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PEN文具有限公司</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header_in">
+				<nav class="nav">
+					<h1 class="logo"><img src="images/logo.png"/></h1>
+					<div class="navR">
+						<ul>
+							<li class="cur"><a href="index.html">首页</a>
+							<p class="p3"></p>
+							</li>
+							<li><a href="list.html">产品分类</a></li>
+							<li><a href="detail.html">关于我们</a></li>
+							<li><a href="#">最新动态</a></li>
+						</ul>									
+					</div>
+				</nav>
+			</div>
+		</header>
+		<figure class="banner wow animated">
+			<div class="swiper-container" >
+		    	<div class="swiper-wrapper">
+			        <div class="swiper-slide ">
+			        	<img src="images/banner-01.png"/>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="images/banner-02.png"/>
+			        </div>
+		       
+		    	</div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination dot"></div>
+		    
+			</div>
+		</figure>
+		<script src="js/swiper.min.js"></script>
+		<script>        
+		  var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal', // 切换方向：vertical 垂直；horizontal 水平方向
+		    speed: 2000, //速度；过渡的时间；
+		    loop: true, // 循环模式选项
+		    //autoplay: true, //自动播放；
+		    autoplay: {
+			    delay: 5000, //间隔时间；
+			    stopOnLastSlide: false, //滑到最后一个是否停止自动播放，跟loop冲突；
+			    disableOnInteraction: false, //用户操作之后是否停止自动播放；
+			},
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		      clickable :true, //分页器是否可以控制切换；
+		    },
+		    // 如果需要前进后退按钮
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		    effect: 'slide', //'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
+		    keyboard : true, //键盘方向键控制；
+		    mousewheel: false, //鼠标滚轮控制；
+		  })        
+		  </script>
+		<section class="main">
+			<div class="product">
+				<div class="product_in">
+					<h2 class="tong">产品分类</h2>
+					<p class="p1">PRODUCT</p>
+					<dl class="wow zoomIn">
+						<dt><img src="images/PEN.jpg"/></dt>
+						<dd>书写文具</dd>
+					</dl>
+					<dl class="wow zoomIn">
+						<dt><img src="images/bijiben.jpg"/></dt>
+						<dd>笔记本</dd>
+					</dl>
+					<dl class="wow zoomIn">
+						<dt><img src="images/paper_wrapping.jpg"/></dt>
+						<dd>创意袋子</dd>
+					</dl>
+					<dl class="last wow zoomIn">
+						<dt><img src="images/storage.jpg"/></dt>
+						<dd>收纳盒</dd>
+					</dl>
+				</div>
+				<div class="productD">
+					<div class="productD_in">
+						<div class="box" >
+							<img src="images/shikishi.jpg"/>
+							<img src="images/hover_07.png"/>
+						</div>
+						<div class="box">
+							<img src="images/chotto.jpg"/>
+							<img src="images/hover_02.png"/>
+						</div>
+						<div class="box boxC">
+							<img src="images/new-products_201811_wall.jpg"/>
+							<img src="images/hover_03.png"/>
+						</div>
+						<div class="box">
+								<img src="images/new-products_201810_eclips.jpg"/>
+								<img src="images/hover_04.png"/>
+							</div>
+							<div class="box">
+								<img src="images/new-products_201807_xs_silver.jpg"/>
+								<img src="images/hover_05.png"/>
+							</div>
+							<div class="box boxC">
+								<img src="images/new-products_201810_xstape.jpg"/>
+								<img src="images/hover_06.png"/>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="aboutUs">
+				<div class="aboutUs_in">
+					<h2 class="tong">关于我们</h2>
+					<p class="p1">ABOUT US</p>
+					<div class="con">
+						<div class="cen">
+							<h3><img src="images/font_07.png"/></h3>
+							<p>pen是一家整合创意价值与服务优势，倡导时尚文具生活方式，提供学习和工作场景解决方
+	<br />
+	案的综合文具供应商，主要从事pen及其所属品牌学生文具、办公文具、儿童美术等产品的设计、研发、制造、
+	<br />
+	销售。公司秉承“真诚、专注、协作、共赢”的核心价值观，拥有一支先进水平的跨国设计师团队，并且不断整
+	<br />
+	合来自世界各地创意团队和外部优质资源，开发优质文具产品，时刻保持着自身产品功能与设计的先进地位。
+	<br />
+	<p>同时，公司通过高效整合原料、技术、资本、市场、人才和创意等重要的资源，努力展示pen的产品创意
+	</p>
+	和品牌理念。
+							</p>
+							<span>
+								<a href="detail.html">查看更多+</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ourAdvantage">
+				<div class="ourAdvantage_in">
+					<h2 class="tong">我们的优势</h2>
+					<p class="p1">OUR ADVANTAGE</p>
+					<div class="conten">
+						<dl>
+							<dt>
+								<img class="wow slideInLeft" src="images/icon-bi.png"/>
+							</dt>
+							<dd>
+								<h3>专 业</h3>
+								<h4>MAJOR</h4>
+								<p>由一群文具行业的资深人士创
+	<br />
+	立，致力于文具行业，以研发能力
+	<br />
+	为核心竞争力，发展自有品牌,专注
+	<br />
+	于企业新品牌形象塑造与提升，为
+	<br />
+	客户提供需求.</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img class="wow slideInLeft" src="images/icon-yan.png"/>
+							</dt>
+							<dd>
+								<h3>专注</h3>
+								<h4>ABSORBEO</h4>
+								<p>倡导时尚文具生活方式，提供
+	<br />
+	具供应商，主要从事pen及其所属
+	<br />
+	 品牌学生文具、办公文具、儿童美
+	<br />
+	 术等产品的设计、研发、制造和销
+	 <br />售。 
+	</p>
+							</dd>
+						</dl>	
+						<dl class="bg">
+							<dt>
+								<img class="wow slideInRight" src="images/icon-ji.png"/>
+							</dt>
+							<dd>
+								<h3> 高效 </h3>
+								<h4>EFFICIENT</h4>
+								<p>愿以价廉质优的产品，先进的
+	<br />
+	产品制作工艺，诚信的经营理念，
+	<br />
+	愿与广大客户携手缔造完美灿烂
+	<br />
+	的明天 !
+	</p>
+							</dd>
+						</dl>	
+						<dl class="bg last">
+						<dt>
+							<img class="wow slideInRight" src="images/icon-bi.png"/>
+						</dt>
+						<dd>
+							<h3>创新</h3>
+							<h4>INNOVATE</h4>
+							<p>秉承路有多远，我们的服务就
+<br />
+有多远的服务理念，坚持以品牌服
+<br />
+务为核心，为广大客户提供全方位
+<br />
+的服务 。
+<br />
+						</dd>
+					</dl>	
+					</div>
+				</div>
+			</div>
+		    <div class="leibei">
+		    	<div class="leibei_in">
+		    		<div class="box1">
+		    			<img src="images/series-products_04 .jpg"/>
+		    			<img src="images/bi-03 hover.jpg"/>
+		    		</div>
+		    		<div class="box1">
+		    			<img src="images/series-products_06.jpg"/>
+		    			<img src="images/series-products_06_hover.jpg"/>
+		    		</div>
+		    		
+		    		<div class="box1">
+		    			<img src="images/series-products_07.jpg"/>
+		    			<img src="images/series-products_07_hover.jpg"/>
+		    		</div>
+
+		    		<div class="box1">
+		    			<img src="images/series-products_05.jpg"/>
+		    			<img src="images/series-products_05_hover.jpg"/>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+			<div class="latestNews">
+				<div class="latestNews_in">
+				<aside class="aside">
+					<img class="wow flipInY" data-wow-duration ="1s" src="images/aside.png"/>
+				</aside>
+				<acticle class="acticle">
+				<h2 class="tong">最新新闻</h2>
+					
+					<p class="p1">LATEST NEWS</p>
+					<div class="conT">					
+						<p class="p2"> “我是中国人 写好中国字”第三届文具杯全国青少年书法大赛圆满落幕</p>
+						<time>【2018-11-08】</time>
+						<p class="p3"></p>				
+						<p class="p2"> 南国书香节不止有书香，打造文创体验专区</p>
+						<time>【2018-11-08】</time>
+						<p class="p2"> “我是中国人 写好中国字”第三届文具杯全国青少年书法大赛启动</p>
+						<time>【2018-08-10】</time>
+						<p class="p2"> 第六届“文具杯”少儿美术创意绘画征集活动全面启动</p>
+						<time>【2018-04-20】</time>
+						<p class="p2"> 少年挥墨壮写秀美中华 孔子故里弘扬传统文化</p>
+						<time>【2017-11-18】</time>
+						<span>
+							<a href="#">更多资讯
+							<img src="images/yuan.png"/></a>
+						</span>
+					</div>				
+				</acticle>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="fonnter_in">
+				<div class="footerUp">
+					<ul>
+						<li>
+							<dl>
+								<dt><a href="#">关于我们</a></dt>
+								<dd><a href="#">最新消息</a></dd>
+								<dd><a href="#">我们的优势</a></dd>
+							</dl>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<dl>
+								<dt><img src="images/font_07.png"/></dt>
+								<dd><a href="#">联系电话：15812691165</a></dd>
+							</dl>
+						</li>
+					</ul>
+					<ul class="tan">
+						<li>
+							<dl>
+								<dt><img src="images/QQ_03.png"/></dt>
+								<dd>QQ</dd>
+								
+							</dl>
+							<dl>
+								<dt><img src="images/wechat_05.png"/></dt>
+								<dd>微信</dd>
+								
+							</dl>
+							<dl>
+								<dt class="lasT"><img src="images/wibo.png"/></dt>
+								<dd>微博</dd>
+								
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="footerD">
+					<p>&copy;www.penwenjudian.com,All rights reserved 沪ICP备05002236号</p>
+				</div>
+			</div>
+		</footer>
+	
+	    <script src="js/wow.min.js"></script>
+	    <script>
+	    wow = new WOW({
+		boxClass: 'wow', // 需要添加动画的类名
+		animateClass: 'animated', // animate的类名
+		offset: 300, // 动画元素距离浏览器底部的距离
+		mobile: true, // 移动端是否使用效果
+	})
+	wow.init();
+	    </script>
+	</body>
+</html>
+  
+ 
+
+

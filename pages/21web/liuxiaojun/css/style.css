@@ -1,0 +1,224 @@
+/*----------头部------------*/
+a:hover{color:#cd9a7c;}
+.header{height: 1080px;position: relative;}
+.header_In{width: 1200px;height: 1080px;margin: auto;position: absolute;top: 0;left: 50%;margin-left: -600px;z-index: 2;}
+.daohang{width: 1200px;height: 90px;}
+.daohang .logo{float: left;margin-top: 13px;}
+.daohang .daoR{float: right;width: 700px;height: 90px;line-height: 90px;}
+.daoR li{float:left;margin-left: 75px;position: relative;padding: 10px;font-size: 16px;color: #333;line-height: 68px;box-sizing: border-box;}
+/*li的下划线*/
+.header_In .daoR li:after{content: ""; width: 100%; height: 2px; background: #cd9a7c; position: absolute; bottom: 18px; left: 0px; display: none;transition: 0.5s ;}
+.header_In .daoR li:hover:after{display: block;}
+.header_In .daoR .cur a{color: #cd9a7c;}
+.header_In .daoR .cur:after{content: ""; width: 100%; height: 2px; background: #cd9a7c; position: absolute; bottom: 18px; left: 0px;display: block;}
+/*文字*/
+.wenzi{width: 1000px;height: 100px;position: absolute;margin:auto; top: 0;left: 0;right: 0;bottom: 0;text-align: center;font-family:  "Dosis", sans-serif;}
+.wenzi .one{font-size:50px;color: #333;letter-spacing: 50px;opacity: 0.9;text-transform: uppercase;font-weight: 400;}
+.wenzi .two{ont-size:16px;color: #333;letter-spacing: 10px;opacity: 0.6;text-transform: uppercase;font-weight: 400;}
+
+/*分页器 dot*/
+.dot{width: 50px; z-index: 1; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);}
+.dot .swiper-pagination-bullet{width: 14px; height: 14px; border-radius: 50%; margin: 10px 2px; cursor: pointer; display: inline-block; background: #fff; margin: 5px; margin-bottom: 10px;}
+.dot .swiper-pagination-bullet-active{background: #cd9a7c;}
+
+/*----------马卡龙沙发------------*/
+.maka{width: 1200px;height: 696px;margin: auto;}
+.maka .makaL{width: 685px;height: 696px;float: left;}
+.makaL .lan{width: 484px;height: 696px;background: #F6F9FE;}
+.lan img{margin: 64px 0 0 54px;}
+.maka .makaR{width:400px;height: 280px;float: right;margin-top:300px;text-align:justify;position: relative; }
+.makaR h2{font-size:24px;font-family: "微软雅黑";}
+.makaR h3{font-size:20px;font-family: "微软雅黑";margin-top: 40px;}
+.makaR p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;}
+.makaR .hezi{width: 284px;height: 40px;border: 2px dashed #ffed92;display: block;position: absolute;top:-5px;left:46px;}
+
+/*----------安吉也 长柜------------*/
+.anji{width: 1200px;height: 631px;margin: auto;margin-top: 70px;overflow: hidden;}
+.anji .anL{float: left;width: 400px;height: 430px;text-align:justify;position: relative;margin-top: 210px;}
+.anL h2{font-size:24px;font-family: "微软雅黑";}
+.anL h3{font-size:20px;font-family: "微软雅黑";margin-top: 40px;}
+.anL p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;}
+.anL .hezi{width: 143px;height: 40px;border: 2px dashed #ffed92;display: block;position: absolute;top:-7px;left:0;}
+.anji img{float: right;vertical-align: middle;}
+
+.anTU{width: 1200px;height: 582px;margin: auto;margin-top: 70px;}
+.anTU .yi{width: 744px;height: 582px;float: left;}
+.anTU .two{width: 408px;height: 582px;float: right;}
+
+/*----------拂袖吧椅------------*/
+.fuxiu{width: 1200px;height: 631px;margin: auto;margin-top: 70px;overflow: hidden;}
+.fuxiu .fuL{float: left;width: 400px;height: 430px;text-align:justify;position: relative;margin-top: 210px;}
+.fuL h2{font-size:24px;font-family: "微软雅黑";}
+.fuL h3{font-size:20px;font-family: "微软雅黑";margin-top: 40px;}
+.fuL p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;}
+.fuL .hezi{width:203px;height: 40px;border: 2px dashed #ffed92;display: block;position: absolute;top:-7px;left:24px;}
+.fuxiu img{float: right;vertical-align: middle;}
+
+.fuTU{width: 1200px;height: 582px;margin: auto;margin-top: 70px;}
+.fuTU li{width: 380px;height: 582px;float: left;margin-right: 30px;}
+.fuTU li:last-child{margin-right: 0;}
+
+/*----------小怪兽糖罐组------------*/
+.xiaog{height: 643px;background: url(../images/xiaoguaishou01.png) no-repeat 0 center;margin-top: 70px;}
+.xiaog_In{width: 1200px;height: 643px;margin: auto;}
+
+.xiaog_In .xiaogL{float: left;width: 400px;height: 430px;text-align:justify;position: relative;margin-top: 47px;}
+.xiaogL h2{font-size:24px;font-family: "微软雅黑";}
+.xiaogL h3{font-size:20px;font-family: "微软雅黑";margin-top: 40px;}
+.xiaogL p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;}
+.xiaogL .hezi{width:208px;height: 40px;border: 2px dashed #ffed92;display: block;position: absolute;top:-7px;left:19px;}
+
+/*----------狐步小吊灯------------*/
+.hubu{width: 1200px;height: 631px;margin: auto;margin-top: 70px;overflow: hidden;}
+.hubu img{float: left;}
+.hubu .huR{width:400px;height: 280px;float: right;margin-top:220px;text-align:justify;position: relative; }
+.huR h2{font-size:24px;font-family: "微软雅黑";}
+.huR h3{font-size:20px;font-family: "微软雅黑";margin-top: 40px;}
+.huR p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;}
+.huR .hezi{width: 284px;height: 40px;border: 2px dashed #ffed92;display: block;position: absolute;top:-5px;left:-48px;}
+
+.huTU{width: 1200px;height: 582px;margin: auto;margin-top: 70px;}
+.huTU .yi{width: 408px;height: 582px;float: left;}
+.huTU .two{width: 744px;height: 582px;float: right;}
+
+/*----------融光 挂窗------------*/
+.rong{width: 1200px;height: 631px;margin: auto;margin-top: 70px;overflow: hidden;}
+.rong .rongL{float: left;width: 400px;height: 430px;text-align:justify;position: relative;margin-top: 210px;}
+.rongL h2{font-size:24px;font-family: "微软雅黑";}
+.rongL h3{font-size:20px;font-family: "微软雅黑";margin-top: 40px;}
+.rongL p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;}
+.rongL .hezi{width:203px;height: 40px;border: 2px dashed #ffed92;display: block;position: absolute;top:-7px;left:24px;}
+.rong img{float: right;vertical-align: middle;}
+
+.rongTU{width: 1200px;height: 582px;margin: auto;margin-top: 70px;overflow: hidden;}
+.rongTU li{width: 380px;height: 582px;float: left;margin-right: 30px;}
+.rongTU li:last-child{margin-right: 0;}
+
+/*----------footer------------*/
+.footer{ width: 100%; height: 120px; background: #f4dfc5; text-align: center; color: #999; line-height: 36px;margin-top: 70px;}
+.p1{ padding-top: 25px; }
+.p1 a{ margin: 0 20px; color: #999;font-size: 16px;}
+
+
+
+
+
+/*-----------------listheader----------------*/
+.listheader{height: 942px;position: relative;background:url(../images/listbanner.png)no-repeat center 0;}
+.listheader_In{width: 1200px;height: 942px;margin: auto;position: absolute;top: 0;left: 50%;margin-left: -600px;z-index: 2;}
+.daohang{width: 1200px;height: 90px;}
+.daohang .logo{float: left;margin-top: 13px;}
+.daohang .daoR{float: right;width: 700px;height: 90px;line-height: 90px;}
+.daoR li{float:left;margin-left: 75px;position: relative;padding: 10px;font-size: 16px;color: #333;line-height: 68px;box-sizing: border-box;}
+/*li的下划线*/
+.listheader_In .daoR li:after{content: ""; width: 100%; height: 2px; background: #cd9a7c; position: absolute; bottom: 18px; left: 0px; display: none;transition: 0.5s ;}
+.listheader_In .daoR li:hover:after{display: block;}
+.listheader_In .daoR .cur a{color: #cd9a7c;}
+.listheader_In .daoR .cur:after{content: ""; width: 100%; height: 2px; background: #cd9a7c; position: absolute; bottom: 18px; left: 0px;display: block;}
+/*文字*/
+.wenzi{width: 1000px;height: 100px;position: absolute;margin:auto; top: 0;left: 0;right: 0;bottom: 0;text-align: center;font-family:  "Dosis", sans-serif;}
+.wenzi .one{font-size:50px;color: #333;letter-spacing: 50px;opacity: 0.9;text-transform: uppercase;font-weight: 400;}
+.wenzi .two{ont-size:16px;color: #333;letter-spacing: 10px;opacity: 0.6;text-transform: uppercase;font-weight: 400;}
+
+/*-----------------list图片----------------*/
+.listu{width: 1200px;height: 457px;margin: auto;margin-top: 140px;}
+.listu li{float: left;width: 380px;height: 457px;margin-right: 30px;}
+.listu li:last-child{margin-right: 0;}
+
+/*-----------------list关于格致----------------*/
+.listguan{width: 1200px;height: 761px;margin: auto;margin-top: 140px;}
+.listguan img{float: left;}
+.listguan .listguanR{width:430px;height:280px;float:right;margin-top:220px;text-align:justify;position:relative;}
+.listguanR h2{font-size:24px;font-family: "微软雅黑";text-align: center;}
+.listguanR .p0{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;margin-top: 50px;}
+.listguanR .p2{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;text-align: center;margin-top: 50px;}
+
+/*-----------------list企业介绍----------------*/
+.qiye{height:800px;background: #F4F4F4;margin-top: 100px;}
+.qiye_In{width: 1200px;height: 800px;margin: auto;}
+.qiye_In .qiL{float:left;margin-top: 50px;}
+.qiye_In .qiL .ON1{width: 486px;height: 361px;overflow: hidden;}
+.qiye_In .qiL .ON2{width: 486px;height: 361px;margin-top: 85px;text-align: left;}
+.qiL .ON2 p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;margin-top: 50px;}
+
+.qiye_In .qiR{float:right;}
+.qiye_In .qiR .ON3{width: 608px;height: 100px;}
+.qiye_In .qiR p{font-size:18px;font-family: "微软雅黑";margin-top: 10px;line-height: 28px;color: #999;letter-spacing: 1px;margin-top:60px;}
+.qiye_In .qiR .ON4{width: 608px;height: 513px;margin-top:50px;}
+
+/*----------listfooter------------*/
+.listfooter{ width: 100%; height: 120px; background: #f4dfc5; text-align: center; color: #999; line-height: 36px;margin-top: 70px;overflow: hidden;}
+.p1{ padding-top: 25px; }
+.p1 a{ margin: 0 20px; color: #999;font-size: 16px;}
+
+
+
+
+
+
+
+/*----------detailheader------------*/
+.detailheader{height: 942px;position: relative;background: url(../images/datebanner01.png) no-repeat center 0;}
+.detailheader_In{width: 1200px;height: 942px;margin: auto;position: absolute;top: 0;left: 50%;margin-left: -600px;z-index: 2;}
+.daohang{width: 1200px;height: 90px;}
+.daohang .logo{float: left;margin-top: 13px;}
+.daohang .daoR{float: right;width: 700px;height: 90px;line-height: 90px;}
+.daoR li{float:left;margin-left: 75px;position: relative;padding: 10px;font-size: 16px;color: #333;line-height: 68px;box-sizing: border-box;}
+/*li的下划线*/
+.detailheader_In .daoR li:after{content: ""; width: 100%; height: 2px; background: #cd9a7c; position: absolute; bottom: 18px; left: 0px; display: none;transition: 0.5s ;}
+.detailheader_In .daoR li:hover:after{display: block;}
+.detailheader_In .daoR .cur a{color: #cd9a7c;}
+.detailheader_In .daoR .cur:after{content: ""; width: 100%; height: 2px; background: #cd9a7c; position: absolute; bottom: 18px; left: 0px;display: block;}
+/*文字*/
+.wenzi{width: 1000px;height: 100px;position: absolute;margin:auto; top: 0;left: 0;right: 0;bottom: 0;text-align: center;font-family:  "Dosis", sans-serif;}
+.wenzi .one{font-size:50px;color: #333;letter-spacing: 50px;opacity: 0.9;text-transform: uppercase;font-weight: 400;text-align: center;}
+.wenzi .two{ont-size:16px;color: #333;letter-spacing: 10px;opacity: 0.6;text-transform: uppercase;font-weight: 400;text-align: center;margin-top: 30px;}
+
+/*----------detail导航------------*/
+.detaildaohang{width: 1200px;height: 200px;margin: auto;line-height: 200px;}
+.detaildaohang ul{width: 1000px;height: 200px;margin: auto;}
+.detaildaohang li{float: left;margin-left: 90px;}
+.detaildaohang .cur a{color:#cd9a7c;}
+
+/*----------detailchanpin------------*/
+.detailchan{width: 1200px;height: 408px;margin: auto;margin-bottom: 40px;}
+.detailchan dl{width: 290px;height: 408px;float: left;margin-right: 13px;}
+.detailchan dl:last-child{margin-right: 0;}
+.detailchan dl dt{width: 290px;height: 290px;overflow: hidden;}
+.detailchan dl dt img{cursor: pointer;transition: all 0.6s;}
+.detailchan dl dt img:hover{transform: scale(1.2);}
+.detailchan dl dd{width: 290px;height: 118px;text-align: center;line-height:25px;padding-top: 50px;box-sizing: border-box;}
+.detailchan dl dd h5{font-size:16px;color: #333;letter-spacing: 1px;opacity: 0.9;font-weight:bold;}
+.detailchan dl dd p{font-size: 16px;color: #333;}
+
+/*----------detailfooter------------*/
+.detailfooter{ width: 100%; height: 120px; background: #f4dfc5; text-align: center; color: #999; line-height: 36px;margin-top: 100px;overflow: hidden;}
+.p1{ padding-top: 25px; }
+.p1 a{ margin: 0 20px; color: #999;font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+
+body{color: white;}
+body img{vertical-align: middle;}
+a{text-decoration: none;color: #333;font-size: 14px;}
+a:hover{text-decoration: none;}
+
+/*-----------------header----------------------*/
+.header{height: 900px;/*background: url(../image/banner.png) no-repeat center top;*/width: 100%;position: relative;}
+.header .header_in{width: 1200px;height: 60px;margin: auto;line-height: 60px;position: absolute;left: 50%;top: 0;transform: translate(-50%);}
+.header_in h1{float: left;width: 66px;height: 48px;}
+.header_in .headerR{float: right;}
+.header_in .headerR li{float: left;margin: 0 30px;}
+.header_in .headerR li:nth-of-type(5){margin-right: 0;}
+.header_in .headerR li:hover a{color: #ff8383;}
+.header_in .headerR li .cur1{color: #ff8383;}
+
+
+
+/*-------------------diyi-----------------*/
+.diyi{height: 540px;perspective: 3000px;}
+.diyi_in{width: 1200px;height: 540px;margin: auto;position: relative;}
+.diyi_in .diyiL{width: 600px;height: 560px;background: #fff;position: absolute;left: 0; top: -80px;box-shadow: 0 0 10px rgba(0,0,0,0.1);padding: 50px 50px 80px 50px;box-sizing: border-box;}
+.diyi_in .diyiL h2{margin-bottom: 40px;}
+.diyi_in .diyiL p{font-size: 14px;color: #666;}
+.diyi_in .diyiL ul{width: 460px;height: 75px; margin: auto;margin-top: 60px;}
+.diyi_in .diyiL ul li{float: left;text-align: center;margin-right: 106px;height: 75px;}
+.diyi_in .diyiL ul li:nth-of-type(4){margin-right: 0;}
+.diyi_in .diyiL ul li p{font-size: 16px;color: #999;margin-top: 18px;}
+.diyi_in .diyiL ul li:nth-of-type(3) p{margin-top: 14px;}
+.diyi_in .diyiL ul li:nth-of-type(4) p{margin-top: 14px;}
+.diyi_in .diyiL a{width: 187px;height: 46px;text-align: center;line-height: 46px;border: 1px solid #ff8383;color: #ff8383;display: block;margin-top: 48px;transition: 0.5s;}
+
+
+.diyi_in .diyiL a:hover{background:#ff8383 ;color: white;}
+.diyi_in .diyiL ul li:hover img{transform: rotateY(360deg);}
+.diyi_in .diyiL ul li img{transition: 1.5s;cursor: pointer;}
+.diyi_in .diyiR{width: 600px;height: 480px;position: absolute;right: 0; top: 0;}
+.diyi_in .diyiR img{height: 100%;}
+
+
+
+
+/*------------dier-------------*/
+.dier{height: 400px;background: url(../image/banner_01.jpg) no-repeat center center fixed;position: relative;background-size: 100% ;}
+.dier .dier_in{width: 1200px;height: 400px;margin: auto;text-align: center;padding-top: 90px;box-sizing: border-box;position: absolute;left: 50%;top: 0;transform: translate(-50%);}
+.dier .beijing{background: rgba(0,0,0,0.5);height: 400px;width: 100%;}
+.dier .dier_in strong{font-size: 70px;}
+.dier .dier_in p{font-size: 22px;line-height: 36px;}
+.dier_in a{width: 187px;height: 46px;text-align: center;line-height: 46px;border: 1px solid #fff;color: #fff;display: block;margin-top: 48px;margin: auto;margin-top: 45px;transition: 0.5s;}
+
+.dier_in a:hover{background: #fff;color: #333;}
+
+
+/*---------------disan--------------*/
+.disan{height: 671px;}
+.disan .disan_in{width: 1200px;height: 675px;margin: auto;overflow: hidden;}
+.disanUp{width: 135px;height: 61px;margin: auto;margin-top: 60px;margin-bottom: 30px;}
+
+.disanDown{width: 1200px;height: 520px;}
+.disanDown .disanZ{width: 590px;height: 520px;float: left;margin-right: 20px;}
+.disanDown .disanZ .tu1{width: 590px;height: 310px;position: relative;cursor: pointer;}
+ .disanZ .tu1 .wenzi{width: 590px;height: 310px;background: rgba(0,0,0,0.5); position: absolute;left: -590px;top: 0;text-align: center;cursor: pointer;transition: 0.8s;text-align: center;padding: 140px;box-sizing: border-box;}
+.disanZ .tu1 .wenzi b{font-size: 20px;font-weight: normal;}
+.disanZ .tu1 .wenzi .p10{font-size: 14px;margin-top: 6px;} 
+ 
+.disanDown .disanZ .tu1:hover .wenzi{left: 0;}
+
+
+.disanDown .disanZ span{width: 590px;height: 190px;margin-top: 20px;background: #ff8383;display: block;padding: 30px 20px;box-sizing: border-box;position: relative;}
+.disanZ .p11{color: white;font-size: 14px;line-height: 24px;position: absolute;right: 20px;bottom: 20px;text-align: right;}
+
+.disanDown .disanT{width: 290px;height: 520px;float: left;position: relative;overflow: hidden;cursor: pointer;}
+.disanDown .disanT .wenzi2{width: 290px;height: 520px;background: rgba(0,0,0,0.5); position: absolute;left: 0;bottom: -520px;text-align: center;cursor: pointer;transition: 0.8s;cursor: pointer;box-sizing: border-box;padding-top: 232px;}
+.disanT .wenzi2 b{font-size: 20px;font-weight: normal;}
+.disanT .wenzi2 .p12{font-size: 14px;margin-top: 6px;} 
+
+.disanDown .disanT:hover .wenzi2{bottom: 0;}
+
+
+
+.disanDown .disanR{width: 280px;height: 520px;float: right;}
+.disanDown .disanR span{width: 280px;height: 210px;margin-bottom: 20px;background: #ff8383;display: block;text-align: center;padding-top: 80px;box-sizing: border-box;}
+
+.disanDown .disanR .tu2{width: 280px;height: 290px;overflow: hidden;cursor: pointer;position: relative;}
+
+.disanDown .disanR .wenzi3{width: 280px;height: 290px;background: rgba(0,0,0,0.5); position: absolute;right: -280px;bottom: 0;text-align: center;cursor: pointer;transition: 0.8s;cursor: pointer;box-sizing: border-box;padding-top: 116px;}
+
+.disanR .tu2 .wenzi3 b{font-size: 20px;font-weight: normal;}
+.disanR .tu2 .wenzi3 .p13{font-size: 14px;margin-top: 6px;} 
+
+
+
+
+
+
+.disanDown .disanR .tu2:hover .wenzi3{right: 0;}
+
+
+.disanR span p{font-size: 20px;margin-bottom: 11px;}
+.disanR span strong{font-weight: normal;font-size: 14px;}
+.disanR span{animation-delay: 0.1s;}
+.disanZ span{animation-delay: 0.1s;}
+
+
+
+
+
+/*---------------disi-------------------*/
+.disi{height: 776px;}
+.disi .disi_in{width: 1200px;height: 780px;margin: auto;text-align: center;overflow: hidden;}
+.disi_in span{width: 135px;height: 61px;margin: auto;margin-top: 60px;display: block;margin-bottom: 30px;}
+.disi_in .disiDown{width: 1200px;height: 621px;}
+.disiDown .Z{width: 600px;height: 625px;float: left;}
+.disiDown .Y{width: 520px;height: 625px;float: right;}
+.disiDown .Y li{width: 520px;height: 190px;}
+.disiDown .Y li .img1{float: left;overflow: hidden;width: 260px;height: 190px;}
+.disiDown .Y li .img1 img{width: 100%;}
+.disiDown .Y li:nth-of-type(2){margin: 27px 0;}
+.disiDown .Y .div2{float: right;height: 190px;width: 220px;text-align: left;padding: 30px 0;box-sizing: border-box;}
+.disiDown .Y .div2 p{line-height: 31px;}
+.disiDown .Y .p1{font-size: 24px;color: #333;}
+.disiDown .Y .p2{font-size: 20px;color: #333;}
+.disiDown .Y .p3{font-size: 16px;color: #666;}
+.disiDown .Y .p4{font-size: 18px;color: #333;line-height: 64px;}
+
+.disiDown .Y li:hover img{transform: scale(1.2);}
+.disiDown .Y li img{transition: 0.5s;cursor: pointer;}
+
+.disiDown .Y li:nth-of-type(1){animation-delay: 0.1s;}
+.disiDown .Y li:nth-of-type(2){animation-delay: 0.2s;}
+.disiDown .Y li:nth-of-type(3){animation-delay: 0.3s;}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------diwu--------------------*/
+.diwu{height: 550px;}
+.diwu_in{width: 1200px;height: 550px;margin: auto;overflow: hidden;}
+.diwu_in span{width: 192px;height: 40px;margin: auto;display: block;margin-top: 60px;}
+.diwu_in dl{width: 250px;height: 400px;padding-top: 40px;box-sizing: border-box;text-align: center;margin-right: 66px;float: left;margin-top: 50px;}
+.diwu_in dl:nth-of-type(4){margin-right: 0;}
+.diwu_in dl dt{width: 250px;height: 250px;}
+.diwu_in dl dd{margin-top: 24px;}
+.diwu_in dl dd a{font-size: 24px;color: #666;transition: 0.5s;}
+.diwu_in dl dd p{font-size: 22px;color: #333;line-height: 60px;}
+
+.diwu_in dl:hover img{transform: scale(1.1);}
+.diwu_in dt img{transition: 0.5s;}
+
+.diwu_in dl:hover a{color: #ff8383;}
+
+
+
+
+/*---------------diliu--------------*/
+.diliu{height: 790px;}
+.diliu_in{width: 1200px;height: 790px;margin: auto;overflow: hidden;}
+.diliu_in span{width: 135px;height: 61px;margin: auto;margin-top: 60px;display: block;margin-bottom: 30px;}
+.diliuDown{width: 1200px;height: 590px;}
+.diliuDown .Z1{width: 560px;height: 590px;float: left;position: relative;overflow: hidden;}
+.diliuDown .Z1 .bai1{width: 560px;height: 120px;background: rgba(255,255,255,0.5);position: absolute;left: 0;bottom: 0;}
+.diliuDown .bai1 p{margin-left: 10px;}
+.diliuDown .bai1 .p4{font-size: 24px;color: #333;margin-top: 50px;}
+.diliuDown .bai1 .p5{font-size: 16px;color: #666;line-height: 44px;}
+
+.diliuDown .Z1:hover img{transform: scale(1.1);}
+.diliuDown .Z1:hover .bai1{opacity: 0;}
+.diliuDown .Z1 img,.bai1{transition: 0.5s;}
+
+.diliuDown .Y1 .span1:hover img{transform: scale(1.1);}
+.diliuDown .Y1 .span1:hover .bai2{opacity: 0;}
+.diliuDown .Y1 .span1 img,.bai2{transition: 0.5s;}
+
+.diliuDown .Y1 .span2:hover img{transform: scale(1.1);}
+.diliuDown .Y1 .span2:hover .bai3{opacity: 0;}
+.diliuDown .Y1 .span2 img,.bai2{transition: 0.5s;}
+
+
+
+
+.diliuDown .Y1{width: 560px;height: 590px;float: right;}
+.diliuDown .Y1 div{width: 560px;height: 280px;}
+.diliuDown .Y1 .span1{margin-bottom: 30px;position: relative;overflow: hidden;}
+.diliuDown .Y1 .span2{position: relative;overflow: hidden;}
+
+.diliu .diliuDown .bai2{width: 300px;height: 280px;background: rgba(255,255,255,0.5);position: absolute;right: 0;bottom: 0;padding-left: 10px;}
+.diliuDown .bai2 .p6{font-size: 24px;color: #333;margin-top: 116px;}
+.diliuDown .bai2 .p7{font-size: 16px;color: #666;line-height: 44px;}
+.diliu .diliuDown .bai3{width: 300px;height: 280px;background: rgba(255,255,255,0.5);position: absolute;right: 0;bottom: 0;padding-left: 10px;}
+.diliuDown .bai3 .p8{font-size: 24px;color: #333;margin-top: 116px;}
+.diliuDown .bai3 .p9{font-size: 16px;color: #666;line-height: 44px;}
+
+
+
+
+/*--------------------diqi----------------------*/
+.diqi{height: 300px;background: #f2f2f2;}
+.diqiUp{width: 1200px;height: 239px;border-bottom: 1px solid #333;margin: auto;}
+.diqiUp .Z2{width: 850px;height: 239px;float: left;}
+.diqiUp .Z2 a{font-size: 14px;color: #333;line-height: 28px;}
+.diqiUp .Z2 dt{font-size: 18px;color: #111;line-height: 47px;margin-bottom: 7px;}
+.diqiUp .Z2 dl{width: 190px;height: 180px;margin-top: 46px;float: left;margin-right: 30px;}
+.diqiUp .Z2 dl:nth-of-type(4){margin-right: 0;}
+
+.diqiUp .Y2{width: 350px;height: 239px;float: right;}
+.diqiUp .Y2 p{font-size: 14px;color: #111;margin-top: 8px;}
+.diqiUp .Y2 .div1{width: 120px;height: 140px;text-align: center;margin-top: 45px;float: left;}
+.diqiUp .Y2 .div1:first-child{margin-right: 90px;margin-left: 20px;}
+.diqiDown{width: 1200px;height: 60px;line-height: 60px;color: #333;font-size: 14px;text-align: center;margin: auto;}
+
+.diqiUp .Z2 a:hover{color: #ff8383;}
+.diqiUp .Y2 a:hover img{animation: rubberBand 1s;}
+
+
+
+

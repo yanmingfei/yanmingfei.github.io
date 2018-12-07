@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0; list-style:none;border: none;}
+body{font-size: 14px; font-family: "黑体 "; color:#fff;background: #000;}
+a{text-decoration: none; color: #fff;}
+a:hover{color:#ec750f;}
+
+/*------导航------*/
+
+nav{height: 160px;background: #080808;margin: auto;}
+nav .nav_In{width: 1200px;height: 160px;margin: 0 auto;overflow: hidden;}
+.nav_In .nue{color:#ec750f;}
+nav h2{margin: 36px auto;text-align: center;line-height: 40px;font-size: 36px;cursor: pointer;}
+nav .nav_In1{width: 462px;height: 40px;margin: auto;line-height: 40px;margin-bottom: 30px;}
+nav .nav_In1 li{float: left;margin-right: 68px;font-size: 18px;}
+nav .nav_In1 li:last-child{margin-right: 0;}
+nav .nav_In1 li:first-child{color:#ec750f ;}
+
+/*---banner---*/
+
+.banner{height: 460px;margin: auto;background:url(../images/banner3.jpg) no-repeat center;}
+.article{height: 1600px;margin: auto;overflow: hidden;background: #080808;}
+.article_In{width: 1200px;height: 280px;margin: auto;margin-top: 80px;border-bottom:1px solid #111;background: #080808;}
+.article_In li:first-child{width: 340px;height: 260px;float: left;}
+.article_In li{overflow: hidden;}
+.article_In li img{width: 100%;transition: 1s;cursor: pointer;}
+.article_In .span1{display: inline-block;width: 738px;height: 226px;float: right;cursor: pointer;}
+.article_In .span1 p:first-child{float: left;font-size: 18px;}
+.article_In .span1 p:nth-child(3){margin-top: 52px;line-height: 26px;color: #666;}
+.article_In .span1 p:last-child{margin-top: 34px;color: #666;}
+
+/*跳页面*/
+.dibu{width: 188px;height: 40px;background: skyblue;margin: 30px auto;}
+.dibu li:nth-child(1){float: left;}
+.dibu li:nth-child(2){width: 60px;height: 40px;background:#eb660e;margin: auto;float: left;line-height: 40px;}
+.dibu li .pp{font-size: 24px;text-align: center;cursor: pointer;}
+.dibu li:nth-child(3){float: right;}
+.article_In li:hover img{transform: scale(1.1);}

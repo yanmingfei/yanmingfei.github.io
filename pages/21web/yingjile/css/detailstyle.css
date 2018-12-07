@@ -1,0 +1,55 @@
+body{color: #000; font-family: "微软雅黑"; font-size: 14px;perspective: 1000px;}
+a{ color: #555; text-decoration: none;}
+img{vertical-align: middle;}
+/*头部*/
+.header{height: 755px;background: url(../images/detailbanner.png) no-repeat center;}
+.headerIn{width: 1200px;height: 755px;margin: auto;}
+.header h1{/*background:tan;*/float: left;margin-top: 18px;margin-right: 8px;perspective:1000px;transition:1s;}
+.header h1:hover{transform: scale(1.1);}
+.nav{float: right;margin-top: 12px;}
+.nav li{line-height: 80px;height: 80px;float: left;margin-right: auto;margin-left: 120px;position: relative;font-size: 16px;}
+/*display:none隐藏*/
+.nav .cur{color: #87553A;}
+.nav .cur:after{content: "";width: 100%; padding:0 10px;height: 3px;background: #87553A;position: absolute;bottom: 20px;left:50%; transform: translateX(-50%);}
+.nav li:after{content: "";width: 100%; padding:0 10px;height: 3px;background: #87553A;position: absolute;bottom: 20px;left:50%; transform: translateX(-50%);display: none;}
+/*鼠标移上li时其伪元素display:block显示*/
+.nav li:hover:after{display: block;}
+.nav li:hover a{color: #87553A;}
+
+/*文字*/
+.zhong{width: 1200px;height: 116px;/*background:tan;*/margin: auto;}
+.zizuo{overflow: hidden;font-size: 16px;}
+.zizuo p{float: left;margin-left: 5px;margin-top: 30px;color: #555;}
+.zizuo p:hover{text-decoration: underline;}
+.zizuo .wu:hover{text-decoration: none;}
+.zhongzi h2{font-size: 20px;text-align: right;animation-delay: 0.3s;}
+.zhongzi p{font-size: 15px;text-align: right;color: #9e9e9e;line-height: 28px;animation-delay: 0.5s;}
+.xian{width: 40px;height: 2px;background: #555555;float: right;}
+/*中间上文案*/
+.article{width: 1200px;margin: auto;height: 428px;margin-top: 50px;overflow: hidden;}
+.articleZ{float: left;}
+.articleY{float: left;width: 780px;height: 99px;margin-left: 50px;}
+.articleY span{line-height: 28px;margin-bottom: 20px;display: block;}
+/*中间下文案*/
+.box{width: 1200px;margin: auto;overflow: hidden;}
+.box1{text-align: center;margin-top: 55px;}
+.box1 h2{font-size: 20px;margin-bottom: 10px;}
+.box1 p{line-height: 25px;margin-bottom: 20px;}
+
+.box2{width: 1200px;height: 206px;margin: auto;overflow: hidden;}
+.box2 ul{width: 3000px;height: 206px;animation: lunbo 20s linear infinite;}
+@keyframes lunbo{
+	from{transform: translate(0,0);}
+	to{transform: translate(-1180px,0);}
+}
+.box2 li{float: left;transition: 0.5s;margin-right: 34px;}
+/*鼠标移上盒子动画暂停*/
+.box2:hover ul{animation-play-state: paused;}
+/*鼠标移上盒子，所有li的不透明度变0.7*/
+.box2:hover li{opacity: 0.5;}
+.box2 li:hover{opacity: 1;}
+
+
+/*底部*/
+.footer{height: 30px;background:#eee;line-height: 30px;margin-top: 40px;}
+.footer p{text-align: center;font-size: 12px;}

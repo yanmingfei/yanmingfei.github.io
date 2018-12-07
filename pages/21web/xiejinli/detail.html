@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>麋饰界官方网站</title>
+		<!--网页关键字-->
+		<meta name="Keywords" content="麋饰界,饰品,项链,耳环,搭配"/>
+		<!--网页描述-->
+		<meta name="Description" content="麋饰界原创银饰工作室，邂逅最美的搭配小物"/>
+		<!--网页ico图标-->
+		<link rel="shortcut icon" href="mishijie.ico" />
+		<!--清空样式-->
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css"/>
+		<!--自行书写的样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--引入动画的-->
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/animate.min.css" />
+		
+	</head>
+	<body>
+		<!--头部导航-->
+		<header class="headerDet">
+			<div class="headerIn">
+				<ul class="nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">品牌资讯</a></li>
+					<li>
+						<a href="#">联系我们</a>
+											</li>
+					<li class="cur">
+						<a href="list.html">产品系列</a>
+
+					</li>
+				</ul>
+				<h1><a href="index.html">
+					<img src="images/logo.png"/>
+				</a></h1>
+			</div>
+		</header>
+		
+		
+		<!--位置-->
+		<div class="place">
+			<p>您的位置：<a href="index.html">首页</a> ><a href="list.html">产品系列</a>> <strong>产品详情</strong></p>
+		</div>
+		
+		<!--产品-->
+		<div class="detail">
+			<div class="boxLeft wow fadeInLeftBig" id="all">
+				<!--<img src="images/detail1.png"/>-->
+				<ul class="thum">
+					<li class="cur" id="img1"><img src="images/detail2.png"/></li>
+					<li id="img2"><img src="images/detail3.png"/></li>
+				</ul>
+			</div>
+			<div class="boxRight wow fadeInRightBig">
+				<h2>麋榴耳钉</h2>
+				<p>这是一款通体纯银，不易过敏，睡觉不用摘的耳钉，酒红石榴圆珠麋鹿可爱鹿角S925纯银耳钉耳环，俏皮可爱，作为圣诞礼物在合适不过了。</p>
+				<img src=" images/detail4.png"/>
+				<p>一年之内免费维修银饰，清洗，换新。</p>
+				<span class="buy">立即购买</span>
+			</div>
+		</div>
+		
+		
+		<!--详情-->
+		<div class="xiangxi">
+			<img src="images/detail5.png"/>
+		</div>
+		
+		<!--相关-->
+		<div class="about">
+			<h3>相关内容</h3>
+			<p>耳饰</p>
+			<ul class="aboutBox">
+				<li>
+					<span><a href="#">
+						<img src="images/detail6.png"/>
+					</a></span>
+					<a href="#">圣诞礼盒耳钉</a>
+					<p class="miaoshu">圣诞老公公的礼物，送给亲爱的你...</p>
+				</li>
+				<li>
+					<span><a href="#">
+						<img src="images/detail7.png"/>
+					</a></span>
+					<a href="#">小麋鹿耳饰</a>
+					<p class="miaoshu">可爱的小麋鹿，红白清新配色...</p>
+				</li>
+				<li>
+					<span><a href="#">
+						<img src="images/detail8.png"/>
+					</a></span>
+					<a href="#">圣诞老人耳钉</a>
+					<p class="miaoshu">把圣诞老公公带在身边，欢乐环绕着...</p>
+				</li>
+				<li>
+					<span><a href="#">
+						<img src="images/detail9.png"/>
+					</a></span>
+					<a href="#">圣诞帽子耳饰</a>
+					<p class="miaoshu">小可爱快来领取你的圣诞帽~...</p>
+				</li>
+			</ul>
+		</div>
+		
+		<!--版权-->
+		<div class="tong">
+			<div class="copyList">
+				<ul class="navDown">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">品牌资讯</a></li>
+					<li><a href="list.html">产品系列</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				<span>COPYRIGHT &copy; 2014 MSJ　麋饰界原创银饰工作室 ALL RIGHTS RESERVED. 粤ICP备13087551号</span>
+			</div>
+			
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+			function huan(img,bg){
+				var oimg = document.getElementById( img )
+				var obg = document.getElementById( 'all' )
+				
+				oimg.onmouseover = function(){
+					obg.style.backgroundImage = bg
+				}
+				
+			}
+			huan('img1','url(images/detail1.png)')
+			huan('img2','url(images/detail10.png)')
+			
+			
+		</script>
+		
+		<script src="js/swiper.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script type="text/javascript">
+			wow = new WOW({
+				boxClass: 'wow', // 需要添加动画的类名
+				animateClass: 'animated', // animate的类名
+				offset: 150, // 动画元素距离浏览器底部的距离
+				mobile: true, // 移动端是否使用效果
+			})
+			wow.init();
+		</script>
+		
+	</body>
+</html>

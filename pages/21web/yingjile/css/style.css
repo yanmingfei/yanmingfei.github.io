@@ -1,0 +1,187 @@
+body{color: #000; font-family: "微软雅黑"; font-size: 14px;}
+a{ color: #555; text-decoration: none;}
+img{vertical-align: middle;}
+/*头部*/
+.header{height: 755px;/*background: url(../images/banner.png) no-repeat center;*/ }
+.headerIn{width: 1200px;height: 82px;margin: auto;position: absolute; left: 50%; top: 0; margin-left: -600px;z-index: 5;}
+.header h1{/*background:tan;*/float: left;margin-top: 18px;margin-right: 8px;perspective:1000px;transition:1s;}
+.header h1:hover{transform: scale(1.1);}
+.nav{float: right;margin-top: 12px;}
+.nav li{line-height: 80px;height: 80px;float: left;margin-right: auto;margin-left: 120px;position: relative;font-size: 16px;}
+/*display:none隐藏*/
+.nav .cur{color: #87553A;}
+.nav .cur:after{content: "";width: 100%; padding:0 10px;height: 3px;background: #87553A;position: absolute;bottom: 20px;left:50%; transform: translateX(-50%);}
+.nav li:after{content: "";width: 100%; padding:0 10px;height: 3px;background: #87553A;position: absolute;bottom: 20px;left:50%; transform: translateX(-50%);display: none;}
+/*鼠标移上li时其伪元素display:block显示*/
+.nav li:hover:after{display: block;}
+.nav li:hover a{color: #87553A;}
+
+.banner{ position: relative; z-index: 1;}
+/*产品分类*/
+.classify{width: 1200px;height: 313px;background:rgba(255,255,255);margin: auto;margin-top: 50px;box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);transition: 1s;}
+/*鼠标移上投影加1像素*/
+.classify:hover{box-shadow: 0 0 15px 1px rgba(0,0,0,0.2);}
+
+
+.classifyL{float: left;text-align: right;width: 869px;height: 313px;padding: 0 35px;box-sizing: border-box;}
+.classifyL span{margin: 35px 0 60px;display: block;cursor: pointer;}
+.classifyL ul{float: left;margin-left: 90px;text-align: center;}
+.classify .classifyL ul:nth-child(2){margin-left: 75px;}
+.classifyL ul p{line-height: 60px;}
+.classifyR{float: right;position: relative;}
+.classifyR h2{position: absolute;left: 25px;top: 27px;font-size: 28px;color: #fff;}
+.classifyR p{position: absolute;left: 25px;top: 68px;color: #fff;}
+
+/*鼠标移上图标旋转*/
+.classifyL img{transition: 1s;}
+.classifyL li:hover img{transform:rotateY(180deg);}
+/*鼠标移上span有边框*/
+.classifyL span:hover{color: #87553A;}
+
+
+/*风格馆*/
+.Style{width: 1200px;height: 100px;text-align: center;margin:auto;padding-top: 90px;}
+.Style p{font-size: 30px;color: #555555;}
+.Style .xian{width: 87px;height: 4px;background:#555555;margin: auto;margin-top: 20px;}
+/*非燃*/
+.north{height: 1304px;}
+.northB{background: url(../images/banner1.png)no-repeat center;height: 400px;position: relative;vertical-align: top;}
+.northB a{font-size: 12px;background: #fff;display: inline-block;width: 121px;height: 26px;text-align: center;line-height: 26px;border-radius: 35px;position: absolute;left: 407px;top: 160px;transition: 0.5s;}
+
+.northB a:hover{background: #854339;color: #fff;}
+
+.main{height: 904px;background:url(../images/banner1x_02.jpg)no-repeat center;position: relative;}
+.mainIn{width: 1200px;height: 884px;background:rgba(255,255,255);box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);margin: auto;position: absolute;left: 0;right: 0;bottom: 0;top: -170px;margin: auto;}
+.mainW{height: 421px;padding: 0 62px;box-sizing: border-box;}
+.mainZ{float: left;overflow: hidden;perspective:1000px; }
+
+
+.mainZ{width: 634px;height: 421px;overflow: hidden;position: relative;}
+.mainZ img{width:100%;transition: 1s;}
+/*图片里面的元素*/
+.mainZ .heise{width: 634px;height: 421px;background:rgba(0,0,0,0.4);position: absolute;opacity: 0;transition: 1s;top:-1px;}
+.top{ width: 614px;height: 1px;background:#fff;top: 20px;left:10px;opacity: 0;position: absolute;transition: 0.8s;}
+.bottom{ width: 614px;height: 1px;background: #fff;opacity: 0;position: absolute;transition: 0.8s;bottom: 20px;right: 10px;}
+.left{ width: 1px;height: 401px;background: #fff;top: 10px;left: 20px;opacity: 0;position: absolute;transition: 0.8s;}
+.right{ width: 1px;height: 401px;background:#fff;top: 10px;right: 20px;opacity: 0;position: absolute;transition: 0.8s;}
+/*线框样式*/
+.mainZ:hover img{transform: scale(1.1);}
+.mainZ:hover .heise{ opacity: 1;}
+.mainZ:hover .top{transform: rotateY(360deg);opacity: 1;}
+.mainZ:hover .bottom{transform: rotateY(360deg);opacity: 1;}
+.mainZ:hover .left{transform: rotateX(360deg);opacity: 1;}
+.mainZ:hover .right{transform: rotateX(360deg);opacity: 1;}
+
+
+
+
+
+
+
+.mainY{float: right;width: 440px;height: 421px;position: relative;overflow: hidden;}
+.main2 img{margin-top: 20px;margin-left: 72px;}
+.main2 .dz{position: absolute;right: 131px;bottom: 25px;border: 1px solid #555;width: 137px;text-align: center;height: 22px;line-height: 22px;border-radius: 35px;font-size: 12px;transition: 0.5s;}
+
+/*鼠标移上点击购买按钮*/
+.main2 .dz:hover{background: #663D27;}
+.main2 .dz:hover a{color: #fff;}
+
+.main1 img{margin-left: 94px;}
+.main2 a{display: inline-block;}
+.mainB{padding: 0 62px;box-sizing: border-box;overflow: hidden;}
+
+/*鼠标移上*/
+.mainB li{transition: 0.5s;}
+.mainB li:hover{transform: translateY(-8px);}
+
+.mainB ul{float: left;margin: 30px 34px 0 0;}
+.mainB ul:last-child{margin-right: 0;}
+/*原木*/
+.north1{height: 1304px;}
+.northB1{background: url(../images/banner2.png)no-repeat center;height: 400px;position: relative;vertical-align: top;}
+.northB1 a{font-size: 12px;background: #fff;display: inline-block;width: 121px;height: 26px;text-align: center;line-height: 26px;border-radius: 35px;position: absolute;left: 407px;top: 160px;transition: 0.5s;}
+
+/*鼠标移上查看更多按钮*/
+.northB1 a:hover{background: #a6a6a6;color: #fff;}
+
+.log{height: 904px;background:url(../images/banner2x_02.jpg)no-repeat center;position: relative;}
+.logIn{width: 1200px;height: 884px;background:rgba(255,255,255);box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);margin: auto;position: absolute;left: 0;right: 0;bottom: 0;top: -170px;margin: auto;}
+.logW{height: 421px;padding: 0 62px;box-sizing: border-box;}
+.logZ{float: left;overflow: hidden;}
+.logY{float: right;width: 440px;height: 421px;position: relative;}
+.log2 img{margin-top: 20px;margin-left: 72px;}
+.log1{overflow: hidden;}
+.log1 img{margin-left: 147px;}
+.log2 a{display: inline-block;position: absolute;right: 131px;bottom: 25px;border: 1px solid #555;width: 137px;text-align: center;height: 22px;line-height: 22px;border-radius: 35px;font-size: 12px;background: url(../images/xiaoche.png)no-repeat 100px center;}
+/*鼠标移上*/
+.log2 a:hover{background: #854339;color: #fff;transition: 0.5s;}
+
+.logB{padding: 0 62px;box-sizing: border-box;overflow: hidden;}
+.logB ul{float: left;margin: 30px 34px 0 0;}
+/*鼠标移上图片不透明度*/
+.logB ul:hover img{opacity: 0.6;}
+
+.logB ul:last-child{margin-right: 0;}
+/*美式*/
+.north2{height: 1304px;}
+.northB2{background: url(../images/banner3.png)no-repeat center;height: 400px;position: relative;vertical-align: top;}
+.northB2 a{font-size: 12px;background: #fff;display: inline-block;width: 121px;height: 26px;text-align: center;line-height: 26px;border-radius: 35px;position: absolute;left: 407px;top: 160px;transition: 0.5s;}
+
+/*鼠标移上查看更多按钮*/
+.northB2 a:hover{background: #2b6c69;color: #fff;}
+
+.american{height: 904px;background:url(../images/banner3x_02.jpg)no-repeat center;position: relative;}
+.americanIn{width: 1200px;height: 884px;background:rgba(255,255,255);box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);margin: auto;position: absolute;left: 0;right: 0;bottom: 0;top: -170px;margin: auto;}
+.americanW{height: 421px;padding: 0 62px;box-sizing: border-box;}
+.americanZ{float: left;overflow: hidden;}
+.americanY{float: right;width: 440px;height: 421px;position: relative;}
+.american2 img{margin-top: 20px;margin-left: 72px;}
+.american1{overflow: hidden;}
+.american1 img{margin-left: 42px;}
+.american2 a img{margin-left: 163px;}
+.americanB{padding: 0 62px;box-sizing: border-box;}
+.americanB ul{float: left;margin: 30px 34px 0 0;overflow: hidden;}
+.americanB ul:last-child{margin-right: 0;}
+.americanB li{position: relative;overflow: hidden;}
+/*添加li的伪元素，做出光线*/
+.americanB li:after{content: "";width: 20px;height: 100%;position: absolute;right: -95px;top: 0;transform: skewX(30deg);background: linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0)); opacity: 0;}
+/*鼠标移上li，扫光效果*/
+.americanB li:hover:after{animation: hua 1.5s;}
+@keyframes hua{
+	0%{right: 460px;opacity: 1;}
+	100%{right: -100px;}
+}
+
+/*产品定制*/
+.couture{background: url(../images/cpdz.png)no-repeat center;height: 544px;}
+.coutureIn{width: 1200px;height: 544px;margin: auto;}
+.coutureW h2{font-size: 30px;color: #fff;padding: 40px 0 0 0;box-sizing: border-box;text-align: center;}
+.coutureW p{color: #fff;margin-top: 5px;text-align: center;}
+.coutureW span{width: 87px;height: 4px;background: #555555;margin: auto;display: block;margin-top: 5px;}
+.coutureB{margin-top: 100px;}
+.coutureB ul{width: 241px;text-align: center;float: left;margin:0 238px 0 0;}
+.coutureB ul:last-child{margin-right: 0;}
+.coutureB ul h3{font-size: 18px;color: #fff;line-height: 35px;}
+.coutureB ul p{color: #fff;line-height: 20px;}
+/*为品质买单*/
+.quality{width: 1200px;height: 286px;margin: auto;overflow: hidden;}
+.qualityW h2{font-size: 30px;padding: 40px 0 0 0;box-sizing: border-box;text-align: center;}
+.qualityW p{color: #666666;margin-top: 5px;text-align: center;}
+.qualityW span{width: 87px;height: 4px;background: #555555;margin: auto;display: block;margin-top: 5px;}
+.qualityB{margin-top: 45px;}
+.icon{width: 1000px;margin-top: 40px;margin-left: 200px;}
+.icon li{width: 100px;height: 80px;text-align: center;margin-right: 140px;float: left;}
+.icon a{width:44px;height:50px;display: block;background: url(../images/jl.png) no-repeat 0 0;margin: auto;}
+/*nth是同级里面的第几个，要同级，所以这里写第几个li里的a才能生效，li里只有一个a。。a不同级，所以直接写第几个a没用*/
+.icon li:nth-child(2) a{background-position: 0 -125px;}
+.icon li:nth-child(3) a{background-position: 0 -236px;}
+.icon li:nth-child(4) a{background-position: 0 -342px;}
+/*鼠标移上切换精灵图位置*/
+.icon li:nth-child(1):hover a{background-position: 0 -67px;}
+.icon li:nth-child(2):hover a{background-position: 0 -182px;}
+.icon li:nth-child(3):hover a{background-position: 0 -288px;}
+.icon li:nth-child(4):hover a{background-position: 0 -396px;}
+.icon p{height: 30px;line-height: 30px;margin-bottom: 0;}
+/*底部*/
+.footer{height: 30px;background:#eee;line-height: 30px;}
+.footer p{text-align: center;font-size: 12px;}

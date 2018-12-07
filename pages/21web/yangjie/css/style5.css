@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0; list-style:none;border: none;}
+body{font-size: 14px; font-family: "黑体 "; color:#fff;background: #080808;}
+a{text-decoration: none; color: #fff;}
+a:hover{color:#ec750f;}
+
+/*----导航----*/
+nav{height: 160px;background: #080808;margin: auto;}
+nav .nav_In{width: 1200px;height: 160px;margin: 0 auto;overflow: hidden;}
+nav .nav_In .nue{color:#ec750f;}
+nav h2{margin: 36px auto;text-align: center;line-height: 40px;font-size: 36px;cursor: pointer;}
+nav .nav_In1{width: 462px;height: 40px;margin: auto;line-height: 40px;margin-bottom: 30px;}
+nav .nav_In1 li{float: left;margin-right: 68px;font-size: 18px;}
+nav .nav_In1 li:last-child{margin-right: 0;}
+nav .nav_In1 li:first-child{color:#ec750f ;}
+
+
+/*-----banner----*/
+.banner{height: 400px;margin: auto;background: url(../images/banner.png) no-repeat center;}
+/*----版心---*/
+.banxin{width: 1200px;height: 1200px;margin: auto;overflow: hidden;}
+/*---标题----*/
+.biaoti{width: 135px;height: 180px;margin: auto;text-align: center;overflow: hidden;transition: 1s;cursor: pointer;}
+.biaoti p:first-child{margin-top: 82px;font-size: 24px;}
+.biaoti p:last-child{font-size: 16px;color: #bbb;}
+/*----图片-----*/
+.tupian{width: 1200px;height: 358px;margin:100px auto;}
+.tupian li{width: 400px;height: 356px;float: left;background: orange;overflow: hidden;overflow: hidden;cursor: pointer;}
+.tupian li img{width: 100%;transition: 0.6s;}
+.wz{height: 44px;}
+.wz1{width: 255px;height: 44px;text-align: center;float: left;margin-right: 150px;margin-top: 14px;cursor: pointer;}
+.wz1 p:first-child{font-size: 18px;transition: 1s;}
+.wz1 p:last-child{margin-top: -16px;font-size: 14px;color: #bbb;transition: 1s;}
+.wz1:last-child{margin-right: 0;}
+.wz1:first-child{margin-left: 70px;}
+.box1{margin-top: 50px;}
+
+.tupian li:hover img{transform: scale(1.2);}
+.biaoti:hover{transform: rotateY(360deg);}
+.wz1:hover p{margin-left: 20px;}

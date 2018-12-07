@@ -1,0 +1,130 @@
+
+body{color: white;}
+body img{vertical-align: middle;}
+a{text-decoration: none;color: #333;font-size: 14px;}
+a:hover{text-decoration: none;}
+
+/*-----------------header----------------------*/
+.header{height: 500px;background: url(../image/banner2.jpg) no-repeat center top;width: 100%;}
+.header .header_in{width: 1200px;height: 60px;margin: auto;line-height: 60px;}
+.header_in h1{float: left;width: 66px;height: 48px;}
+.header_in .headerR{float: right;}
+.header_in .headerR li{float: left;margin: 0 30px;}
+.header_in .headerR li:nth-of-type(5){margin-right: 0;}
+.header_in .headerR li:hover a{color: #ff8383;}
+.header_in .headerR li .cur1{color: #ff8383;}
+
+
+
+
+/*-------------------------diyi----------------------*/
+.diyi{height: 1640px;}
+.diyi_in{width: 1200px;height: 1640px;margin: auto;overflow: hidden;}
+.diyi_in h2{width: 373px;height: 77px;margin: auto;margin-top: 50px;}
+.diyi_in .img1{margin: 30px 0;}
+.diyi_in .ul1{width: 850px;height: 50px;margin: auto;margin-bottom: 40px;}
+.diyi_in .ul1 li{text-align: center;line-height: 50px;float: left;width: 170px;height: 50px;font-size: 24px;color: #333;cursor: pointer;}
+
+.diyi_in .ul1 .cur2{color: white;background: #ff8383;}
+
+/*.diyi_in .ul1 li:hover a{color: white;background: #ff8383;}*/
+
+
+
+
+
+
+
+
+/*.banxinS{width: 1200px;height: 1490px;margin: auto;}*/
+.diyi_in .banxinS div{width: 1210px;height: 1240px;display: none;}
+.diyi_in .banxinS .cur3{display: block;}
+
+.banxinS div dl{width: 280px;height: 400px;padding: 40px 5px 0;box-sizing: border-box;text-align: center;float: left;margin-right: 26px;margin-bottom: 20px;position: relative;overflow: hidden;}
+.banxinS div dl:nth-of-type(4){margin-right: 0;}
+.banxinS div dl:nth-of-type(8){margin-right: 0;}
+.banxinS div dl:nth-of-type(12){margin-right: 0;}
+.banxinS div dl dt{width: 270px;height: 220px;overflow: hidden;}
+.banxinS div dl dt img{width: 100%;transition: 1s;}
+.banxinS div dl dd{width: 270px;height: 106px;margin-top: 30px;}
+.banxinS div dl dd strong{font-size: 16px;color: #333;line-height: 32px;}
+.banxinS div dl dd p{font-size: 12px;color: #999;}
+.banxinS div dl dd a{font-size: 12px;color: #999;width: 80px;height: 26px;text-align: center;line-height: 26px;border-radius: 3px;border: 1px solid #999;display: block;margin: auto;margin-top: 15px;opacity: 0;transition: 0.7s;}
+
+.banxinS div dl .left{height: 400px;width: 1px;background: #ff8383;position: absolute;left: 0;bottom: -418px;transition: 0.7s;opacity: 0;}
+.banxinS div dl .right{height: 400px;width: 1px;background: #ff8383;position: absolute;right: 0;top: -418px;transition: 0.7s;opacity: 0;}
+.banxinS div dl .top{height: 1px;width: 280px;background: #ff8383;position: absolute;left: -307px;top: 0;transition: 0.7s;opacity: 0;}
+.banxinS div dl .down{height: 1px;width: 280px;background: #ff8383;position: absolute;right: -307px;bottom: 0px;transition: 0.7s;opacity: 0;}
+
+.banxinS div dl:hover .left{bottom: 0;opacity: 1;}
+.banxinS div dl:hover .right{top: 0;opacity: 1;}
+.banxinS div dl:hover .top{left: 0;opacity: 1;}
+.banxinS div dl:hover .down{right: 0;opacity: 1;}
+
+.banxinS div dl:hover img{transform: scale(1.1);}
+.banxinS div dl:hover a{opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+.diyi_in .zhidao{width: 200px;height: 36px;margin: auto;margin-top: 55px;line-height: 36PX;text-align: center;}
+.diyi_in .zhidao a{font-size: 14px;color: #111;padding: 0 6px;}
+.diyi_in .zhidao .cur{color:#ff8383 ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------diqi----------------------*/
+.diqi{height: 300px;background: #f2f2f2;}
+.diqiUp{width: 1200px;height: 239px;border-bottom: 1px solid #333;margin: auto;}
+.diqiUp .Z2{width: 850px;height: 239px;float: left;}
+.diqiUp .Z2 a{font-size: 14px;color: #333;line-height: 28px;}
+.diqiUp .Z2 dt{font-size: 18px;color: #111;line-height: 47px;margin-bottom: 7px;}
+.diqiUp .Z2 dl{width: 190px;height: 180px;margin-top: 46px;float: left;margin-right: 30px;}
+.diqiUp .Z2 dl:nth-of-type(4){margin-right: 0;}
+
+.diqiUp .Y2{width: 350px;height: 239px;float: right;}
+.diqiUp .Y2 p{font-size: 14px;color: #111;margin-top: 8px;}
+.diqiUp .Y2 .div1{width: 120px;height: 140px;text-align: center;margin-top: 45px;float: left;}
+.diqiUp .Y2 .div1:first-child{margin-right: 90px;margin-left: 20px;}
+.diqiDown{width: 1200px;height: 60px;line-height: 60px;color: #333;font-size: 14px;text-align: center;margin: auto;}
+
+
+.diqiUp .Z2 a:hover{color: #ff8383;}
+.diqiUp .Y2 a:hover img{animation: rubberBand 1s;}
+
+
+
+

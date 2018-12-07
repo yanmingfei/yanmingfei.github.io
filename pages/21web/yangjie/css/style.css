@@ -1,0 +1,121 @@
+*{margin: 0;padding: 0; list-style:none;border: none;}
+body{font-size: 14px; font-family: "黑体 "; color:#fff;background: #000;}
+a{text-decoration: none; color: #fff;}
+a:hover{color:#ec750f;}
+
+/*导航*/
+nav{height: 160px;background: #080808;margin: auto;}
+nav .nav_In{width: 1200px;height: 160px;margin: 0 auto;overflow: hidden;}
+nav .nav_In .nue{color:#ec750f;}
+nav h2{margin: 36px auto;text-align: center;line-height: 40px;font-size: 36px;cursor: pointer;}
+nav .nav_In1{width: 462px;height: 40px;margin: auto;line-height: 40px;margin-bottom: 30px;}
+nav .nav_In1 li{float: left;margin-right: 68px;font-size: 18px;}
+nav .nav_In1 li:last-child{margin-right: 0;}
+nav .nav_In1 li:first-child{color:#ec750f ;}
+
+
+/*banner*/
+.banner{height: 600px;margin: auto; no-repeat center;}
+.banner img{width: 100%;}
+/*内容*/
+
+article{height: 1102px;background: #000;margin: auto;overflow: hidden;}
+.bQ{width: 300px;height: 40px;margin: auto;margin-top: 50px;}
+.bQ ul{width: 300px;height: 40px;line-height: 40px;border: 2px solid #5c5c5c;cursor: pointer;}
+.bQ ul li{text-align: center;font-size: 24px;transition:0.6s;}
+article .zuopIn{width: 1200px;height: 972px;margin: auto;margin-top: 40px;overflow: hidden;}
+.zuopIn ul{height: 644px;margin: auto;width: 1200px;cursor: pointer;}
+.zuopIn ul li:first-child{width: 430px;height: 645px;}
+.zuopIn ul li{overflow: hidden;}
+.zuopIn ul .zUo{float: left;position: relative;}
+.zuopIn ul li:nth-child(2){width: 598px;height: 305px;float: right;margin-bottom: 34px;position: relative;}
+.yOu2{width: 40%;height: 100%;background:rgba(0, 0, 0, 0.4);display: block;position: absolute;right: 0px;padding-left: 24px; z-index: 999;transition:0.6s;}
+.zuopIn ul .zUo .zUo1{width: 430px;height: 100px;background:rgba(0, 0, 0, 0.4);display: block;position: absolute;bottom: 0;padding-left: 28px;z-index: 999;transition:0.6s;} 
+.zuopIn ul .zUo1 p{margin-top: 20px;}
+.zuopIn ul .zUo1 p:first-child{font-size:24px ;}
+.zuopIn ul .zUo1 p:last-child{font-size:18px ;margin-top: 10px;}
+.zuopIn ul li:nth-child(3){width: 598px;height: 305px;float: right;position: relative;}
+.zuopIn .xIa{width: 1083px;height: 265px;margin:30px auto;position: relative;}
+.zuopIn .xIa img{width: 100%;}
+.yOu2 p{margin-top: 120px;font-size:24px ;}
+.yOu2 p:last-child{margin-top: 10px;font-size:18px ;}
+
+/*-----套餐系列-----*/
+.taochan{height: 500px;background: #080808;}
+.taochan_In{width: 1200px;height: 500px;margin: auto;overflow: hidden;}
+.taochan_In .bQ{margin-top: 54px;}
+.taochan_In1{height: 238px;margin-top: 80px;width: 1201px;}
+.taochan_In1 li{width: 280px;height: 180px;float: left;margin-right: 27px;cursor: pointer;}
+.taochan_In1 li:last-child{margin-right: 0;}
+.taochan_In1 li img{width: 100%;transition:0.6s;opacity: 0.6;}
+.taochan_In1 p{margin-left: 106px;font-size: 24px;margin-top: 26px;}
+.taochan_In2 p{margin-left: 78px;}
+
+/*-----技能----*/
+.jinen{height: 200px;background: #000;margin: auto;overflow: hidden;}
+.jinen_In{width: 1200px;margin: auto;height: 200px;padding: 60px 100px;}
+.jinen_In img{margin-left: 26px;}
+.jinen_In p{text-align: center;font-size: 24px;}
+.jinen_In li{width: 98px;height: 80px;float: left;margin-right: 453px;cursor: pointer;}
+.jinen_In li:last-child{margin-right: 0;}
+
+
+/*----资讯----*/
+.zixun{height: 600px;background: #080808;margin: auto;overflow: hidden;}
+.zixun .bQ{margin-top: 54px;}
+.zixun .zixun1{width: 1201px;height: 328px;margin:80px auto;overflow: hidden;cursor: pointer;}
+.zixun .zixun1 li{width: 335px;height: 328px;float: left;margin-right: 98px;}
+.zixun .zixun1 li img{width: 100%;transition: 1s;opacity: 0.6;}
+.zixun .zixun1 li:last-child{margin-right: 0;}
+.zixun .zixun1 li span p{text-align: center;margin-top: 10px;}
+.zixun .zixun1 li span p:nth-child(2){font-size: 12px;margin-top: 10px;color: #bbb;line-height: 22px;}
+
+/*--logo--*/
+.logo{height: 100px;}
+.logo_In{width: 1200px;height: 100px;margin: auto;overflow: hidden;}
+h1{width: 95px;height: 95px;margin: auto;margin-top: 5px;cursor: pointer;}
+h1 img{transition: 1s;}
+
+/*---底部---*/
+footer{height: 500px;}
+.footer_In{width: 1200px;height: 500px;margin: auto;overflow: hidden;background: #000;}
+.footer_In .dibuz{width: 246px;height: 350px;margin: 87px 30px;float: left;cursor: pointer;}
+.footer_In .dibuz span p{font-size: 24px;color: #fff;margin-top: 0;}
+.footer_In .dibuz p{margin-top: 45px;color: #BBBBBB;}
+
+.footer_In .dibUy{width: 690px;height: 350px;float: right;margin: 87px 68px;}
+.footer_In .dibUy .dibUy1{width: 208px;height: 60px;float: left;margin-right: 33px;}
+.footer_In .dibUy .dibUy1:last-child{margin-right: 0;}
+.footer_In .dibUy .dibUy1 p{color: #bbb;}
+.footer_In .dibUy .text{border-bottom: 1px solid #bbb;float: left;width: 206px;margin-top: 21px; outline:none;color: #BBB;background: none;}
+.footer_In .dibUy .box{width: 692px;height: 60px;}
+.dibUy .dibUy2{margin-top: 24px;}
+.dibUy .dibUy2 p{margin-top: 24px;}
+.dibUy .dibUy2 .text{width: 690px;margin-top: 80px;}
+.dibUy .tJ{float: left;width: 102px;height: 42px;display: block;margin-top: 248px;margin-left: -240px;}
+.footer_In  .sub{background:#080808; color:#fff; cursor: pointer;width: 120px;height: 42px;border: 1px solid #bbb;text-align: center;font-size: 18px;outline:none;}
+
+/*------备案-----*/
+.beian{height: 80px;margin: auto;border-top: 1px solid #080808;cursor: pointer;}
+.beian p{text-align: center;line-height: 80px;}
+
+/*----悬浮----*/
+.xf{position: fixed;right: 0;top: 79%;cursor: pointer;}
+.weixin{width: 100px;height: 100px;background: skyblue;position: fixed;right: 44px;top:79%;opacity: 0;transition: 0.6s;}
+.xf:hover .weixin{opacity: 1;}
+/*--动效--*/
+.bQ ul:hover li{color: #ec750f;}
+
+.zuopIn img{transition:0.6s;}
+.zuopIn li:hover img{transform:scale(1.2);}
+.zuopIn li:hover .yOu2{opacity: 0;}
+.zuopIn li:hover .zUo1{opacity: 0;}
+.zuopIn li .yOu2{transition:0.6s;}
+.xIa:hover img{transform: scale(1.1);}
+.xIa:hover .yOu2{opacity: 0;}
+
+/*.taochan_In1 li:hover img{animation: rubberBand 1s;}*/
+.taochan_In1 li:hover img{margin-top: -20px;opacity: 1;}
+h1:hover img{transform: scale(1.1);}
+.zixun1 li:hover img{transform:rotateY(180deg);opacity: 1;}
+.sub:hover{animation: rubberBand 1s;}

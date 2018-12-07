@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0; list-style:none;border: none;}
+body{font-size: 14px; font-family: "黑体 "; color:#fff;background: #080808;}
+a{text-decoration: none; color: #fff;}
+a:hover{color:#ec750f;}
+
+nav{height: 160px;background: #080808;margin: auto;}
+nav .nav_In{width: 1200px;height: 160px;margin: 0 auto;overflow: hidden;}
+.nav_In .nue{color:#ec750f;}
+nav h2{margin: 36px auto;text-align: center;line-height: 40px;font-size: 36px;cursor: pointer;}
+nav .nav_In1{width: 462px;height: 40px;margin: auto;line-height: 40px;margin-bottom: 30px;}
+nav .nav_In1 li{float: left;margin-right: 68px;font-size: 18px;}
+nav .nav_In1 li:last-child{margin-right: 0;}
+nav .nav_In1 li:first-child{color:#ec750f ;}
+
+
+.banner{height: 460px;margin: auto;background:url(../images/banner22.png) no-repeat center;}
+
+.zx{height: 100px;background: #111;border-bottom: 1px solid #222;overflow: hidden;}
+h1{width: 95px;height: 95px;margin: auto;margin-top: 3px;cursor: pointer;}
+h1 img{transition: 1s;}
+h1:hover img{transform: scale(1.1);}
+
+
+.article{width: 1200px;margin:35px auto 0;background: #080808;overflow: hidden;box-sizing: border-box;}
+.2article{margin:100px auto 0;}
+.article h2{width: 220px;height: 34px;text-align: center;cursor: pointer;}
+.article1{width: 1200px;height: 340px;margin: 80px auto 0;}
+.article1 li{width: 360px;height: 340px;float: left;margin-right: 60px;position: relative;overflow: hidden;cursor: pointer;}
+.article1 li span{margin-top: 30px;display: inline-block;transition:0.5s;}
+.article1 li span p:first-child{font-size: 18px;} 
+.article1 li span p:last-child{margin-top: 8px;color: #bbb;} 
+.article1 li img{width: 100%;}
+.article1 li:last-child{margin-right: 0;}
+.article1 li .jiantou{display: inline-block;float: right;}
+.article .article1 .bf{position: absolute;left: 0;bottom: 0;right: 0;top: -388px;margin: auto;display: block;width: 40px;height: 40px;transition:0.5s;cursor: pointer;}
+.article1 li:hover .jiantou{margin-right: 20px;} 
+.article1 li:hover span{margin-left: 20px;} 
+.article1 li:hover .bf{top: -126px;}
+.article1 li:hover .img2{opacity: 0.5;}
+.article:last-child{height: 590px;overflow: hidden;}
+.dingbu{width: 33px;height: 33px;margin-top: -15px;margin: auto;padding: 20px 26px;cursor: pointer;}
+.article1 li .imgxia{transition: 1s;opacity: 0.5;}
+
+.article1 li:hover .imgxia{transform: rotateY(180deg);}
+.article1 li:hover .imgxia{opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+

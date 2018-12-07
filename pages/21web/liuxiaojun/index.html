@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>格致家居</title>
+		<!--清除基本样式-->
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css"/>
+		<!--基础样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--引入swiper-->
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<!--引入animate-->
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	</head>
+	<body>
+		<!--------头部-------->
+		<header class="header">
+			<div class="swiper-container" >
+			    	<div class="swiper-wrapper">
+			        <div class="swiper-slide" ><img src="images/banner1.jpg"/></div>
+			        <div class="swiper-slide" ><img src="images/banner2.jpg"/></div>
+		    	</div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination dot"></div>
+		    
+			<div class="header_In">
+				<div class="daohang">
+					<div class="logo  wow bounceInDown " data-wow-duration="0.8s">
+						<a href="index.html">
+							<img src="images/logo2.png"/>
+						</a>
+					</div>
+					<ul class="daoR">
+						<li class="cur wow bounceInDown " data-wow-duration="0.8s"><a href="index.html">首页</a></li>
+						<li class="wow bounceInDown " data-wow-duration="1.0s"><a href="list.html">关于格致</a></li>
+						<li class="wow bounceInDown " data-wow-duration="1.2s"><a href="detail.html">产品</a></li>
+						<li class="wow bounceInDown " data-wow-duration="1.4s"><a href="#">资讯</a></li>
+						<li class="wow bounceInDown " data-wow-duration="1.6s"><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="wenzi">
+					<p class="one wow bounceInLeft" data-wow-duration="1.8s">GEZHILIFE</p>
+					<p class="two wow bounceInRight " data-wow-duration="2s">A   LOVELY   SURPRLSE   TO   BE  </p>
+				</div>
+			</div>
+		</header>
+		<script src="js/swiper.min.js"></script>
+		<script>        
+		  var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal', // 切换方向：vertical(垂直) horizontal(水平)
+		    speed:1000,  //速度：过渡的时间
+		    loop: true, // 循环模式选项
+		    //autoplay:true,  //自动播放
+		    autoplay: {
+			    delay: 3000,  //间隔时间
+			    stopOnLastSlide: false,   //滑到最后一个是否停止自动播放，跟loop冲突
+			    disableOnInteraction: false ,  //用户操作之后是否停止自动播放
+			    },
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		      clickable :true,  //分页器(小点)是否可以控制切换
+		    },
+		    effect:'slide',  //'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
+		  })        
+		  </script>
+		  
+	    <!--------马卡龙沙发-------->
+	    <div class="maka">
+		  	<div class="makaL wow bounceInLeft" data-wow-duration="1.8s">
+		  		<div class="lan">
+		  			<img src="images/maka01.jpg" width="634"/>
+		  		</div>
+		  	</div>
+		  	<div class="makaR wow bounceInRight" data-wow-duration="1.8s">
+		  		<span class="hezi"></span>
+		  		<h2>NO MORE MACARON SOFA</h2>
+		  		<h3>马卡龙 布艺沙发</h3>
+		  		<p>小巧的马卡龙沙发，并不会让你深陷甜蜜之中而是知性地给予你足够的支撑，伴你更舒适地久坐办公。两弯扶手，可爱友善，可以托起敲打键盘的你疲惫的双手。</p>
+		  	</div>
+	    </div>
+		  
+	    <!--------安吉也 长柜-------->
+	    <div class="anji">
+	    	<div class="anL wow bounceInLeft" data-wow-duration="0.9s">
+	    		<span class="hezi"></span>
+		  		<h2>ANGIE TV STAND</h2>
+		  		<h3>安吉也 长柜</h3>
+		  		<p>我们喜爱光，希望光能够自然地渗透四周哪怕是时常被遗忘的角落。于是我们向自然借光，把光巧妙的融入柜中。我们希望，当你打开柜门的那一瞬间，能够感到幸福。</p>
+	    	</div>
+	    	<img src="images/anji01.jpg"/ class="wow bounceInRight" data-wow-duration="0.9s">
+	    </div>
+	    <div class="anTU">
+			<div class="yi">
+				<img src="images/anji02.jpg" class="wow bounceInLeft" data-wow-duration="0.9s"/>
+			</div>
+			<div class="two">
+				<img src="images/anji03.jpg" class="wow bounceInRight" data-wow-duration="0.9s"/>
+			</div>
+		</div>
+	    
+	    <!--------拂袖吧椅-------->
+	    <div class="fuxiu">
+	    	<div class="fuL wow bounceInLeft" data-wow-duration="0.9s">
+	    		<span class="hezi"></span>
+		  		<h2>SLEEVE BARSTOOL</h2>
+		  		<h3>拂袖吧椅</h3>
+		  		<p>拂袖椅以“拂袖”形态为灵感，源起自经典元素，同时又不拘此。经过对人机尺度用心研究呈现舒适坐感和简约的现代美。</p>
+	    	</div>
+	    	<img src="images/fuxiu01.jpg" class="wow bounceInRight" data-wow-duration="0.9s"/>
+	    </div>
+	    <ul class="fuTU">
+	    	<li><img src="images/fuxiu03.jpg" class="wow bounceInUp" data-wow-duration="0.9s"/></li>
+	    	<li><img src="images/fuxiu02.jpg" class="wow bounceInUp" data-wow-duration="1.3s"/></li>
+	    	<li><img src="images/fuxiu04.jpg" class="wow bounceInUp" data-wow-duration="1.5s"/></li>
+	    </ul>
+	    
+		<!--------小怪兽糖罐组-------->
+			<div class="xiaog">
+				<div class="xiaog_In">
+					<div class="xiaogL wow bounceInLeft" data-wow-duration="0.9s">
+			    		<span class="hezi"></span>
+				  		<h2>LITTLE MONSTER JAR SET</h2>
+				  		<h3>小怪兽糖罐组</h3>
+				  		<p>小怪兽集结，共五款小怪兽储物罐，各有黑白与彩色可选，把最心爱的一款抱回家，在餐桌上在储物架上陪你萌动全屋。</p>
+	    			</div>
+				</div>
+			</div>
+			
+		<!--------狐步小吊灯-------->
+		<div class="hubu">
+			<img src="images/hubu01.png" class="wow bounceInLeft" data-wow-duration="0.9s"/>
+	    	<div class="huR wow bounceInRight" data-wow-duration="0.9s">
+	    		<span class="hezi"></span>
+		  		<h2>FOXTROT LAMP</h2>
+		  		<h3>狐步小吊灯</h3>
+		  		<p>以狐步舞裙装与动态舞步为灵感的设计发想，米白、柏黑、裸粉三款百搭色，光源沿裙散开，给空间主光源一抹浪漫香气。</p>
+	    	</div>
+       	</div>
+	    <div class="huTU">
+			<div class="yi">
+				<img src="images/hubu02.png" class="wow bounceInLeft" data-wow-duration="0.9s"/>
+			</div>
+			<div class="two">
+				<img src="images/hubu03.png" class="wow bounceInRight" data-wow-duration="0.9s"/>
+			</div>
+		</div>
+		
+		<!--------融光 挂窗-------->
+	    <div class="rong">
+	    	<div class="rongL wow bounceInLeft" data-wow-duration="0.9s">
+	    		<span class="hezi"></span>
+		  		<h2>ENLIGHT CASEMENT</h2>
+		  		<h3>融光 挂窗</h3>
+		  		<p>能呈现不同的个性，随着时间推移、日转灯明，产生有趣的光影变幻 。</p>
+	    	</div>
+	    	<img src="images/rong01.png" class="wow bounceInRight" data-wow-duration="0.9s"/>
+	    </div>
+	    <ul class="rongTU">
+	    	<li><img src="images/rong02.png" class="wow bounceInUp" data-wow-duration="0.9s"/></li>
+	    	<li><img src="images/rong03.png" class="wow bounceInUp" data-wow-duration="1.1s"/></li>
+	    	<li><img src="images/rong04.png" class="wow bounceInUp" data-wow-duration="1.3s"/></li>
+	    </ul>
+		
+		<!--------footer-------->
+		<div class="footer wow bounceInLeft" data-wow-duration="0.9s">
+		    <p class="p1">
+		        <a href="#">首页</a>
+		        <a href="#">关于格致</a>
+		        <a href="#">产品</a>
+		        <a href="#">资讯</a>
+		        <a href="#">联系我们</a>
+		    </p>
+		    <p>
+		    Copyright © 2018 格致家居科技有限公司 保留所有版权 浙ICP备09052756号-1 
+		    </p>
+		</div>
+		
+		<script src="js/wow.min.js"></script>
+		<script type="text/javascript">
+			wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       50,          // default8
+                      mobile:       true,       // default
+                    }
+                )
+                wow.init();
+		</script>
+	</body>
+</html>
