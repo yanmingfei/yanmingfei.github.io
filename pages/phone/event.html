@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叩丁狼教育</title>
+    <style>
+        body {touch-action: none;}
+
+        * {margin: 0; padding: 0; list-style: none; border: none; }
+
+        div {width: 600px; height: 200px; background: linear-gradient(90deg, red 0%, green 100%);}
+    </style>
+</head>
+<body>
+<div id="box"></div>
+
+<script>
+
+    /*1.获取div元素*/
+    var obox = document.getElementById('box')
+    /*2.给div绑定事件*/
+    obox.addEventListener('touchstart', function (e) {
+      obox.innerHTML = 'clientX' + e.touches[0].clientY + 'pageX' + e.touches[0].clientY;
+    })
+    obox.addEventListener('touchmove', function (e) {
+      console.log('touchmove')
+    })
+    obox.addEventListener('touchend', function (e) {
+      console.log('touchend')
+    })
+    obox.addEventListener('ontouchcancel', function () {
+      console.log('touchcancel')
+    })
+
+</script>
+</body>
+</html>
