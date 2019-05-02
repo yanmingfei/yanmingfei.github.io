@@ -21,7 +21,7 @@
     var obox = document.getElementById('box')
     /*2.给div绑定事件*/
     obox.addEventListener('touchstart', function (e) {
-      obox.innerHTML = 'clientX' + e.touches[0].clientY + 'pageX' + e.touches[0].clientY;
+      obox.innerHTML = 'clientX' + e.touches[0].clientX + 'pageX' + e.touches[0].pageX;
     })
     obox.addEventListener('touchmove', function (e) {
       console.log('touchmove')
