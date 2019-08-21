@@ -36,7 +36,7 @@
 				var rotate = rnd(opts.rotate[0], opts.rotate[1]);
 				var imgopts = {
 					css: {
-						transform: "rotate(" + rnd(0, 360) + "deg) scale(" + scale + ") translateX(0) translateY(0)",
+						transform: "rotate(" + rotate + "deg) scale(" + scale + ") translateX(0) translateY(0)",
 						opacity: opacity,
 						// forwards为运动结束后保持最后一个状态
 						animation: "strom" + i + " " + time + "ms linear forwards"
@@ -48,7 +48,7 @@
 				//目标点的关键帧及运动的类名
 				//storm 为动画名称前缀
 				//stay 为类名前缀
-				targetPosKeyframe += "@keyframes strom" + i + "{ 0%{transform:" + imgopts.css.transform + "; opacity:" + opacity + ";scale(" + scale + ");} 100%{transform:rotate(" + rnd(0, 1080) + "deg) translateX(" + newx + "px) translateY(" + newy + "px) scale(" + rnd(opts.scale[0], opts.scale[1]) + "); opacity:0;} }" + ".stay" + i + "{transform:" + imgopts.css.transform + "; opacity:" + imgopts.css.opacity + ";animation:" + imgopts.css.animation + ";}";
+				targetPosKeyframe += "@keyframes strom" + i + "{ 0%{transform:" + imgopts.css.transform + "; opacity:" + opacity + ";scale(" + scale + ");} 100%{transform:rotate(" + rotate + "deg) translateX(" + newx + "px) translateY(" + newy + "px) scale(" + rnd(opts.scale[0], opts.scale[1]) + "); opacity:0;} }" + ".stay" + i + "{transform:" + imgopts.css.transform + "; opacity:" + imgopts.css.opacity + ";animation:" + imgopts.css.animation + ";}";
 			}
 			//将样式添加进文档
 			$('#mouseStorm').append(targetPosKeyframe);
